@@ -1,0 +1,264 @@
+//Jest snapshot v1, https://goo.gl/fbAQLP
+
+
+exports[`<Content /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Content
+    toggleMenu={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="row"
+>
+          <div
+                    className="col-12"
+          >
+                    <img
+                              alt="Menu"
+                              className="d-md-none controls-icon pb-3"
+                              onClick={[Function]}
+                              src="menu.png"
+                    />
+          </div>
+</div>,
+        undefined,
+        <div
+          className="row"
+>
+          <div
+                    className="col-12"
+          />
+</div>,
+      ],
+      "className": "col-12 col-md-8 offset-md-4 col-lg-9 offset-lg-3 container-fluid p-4",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col-12"
+>
+              <img
+                            alt="Menu"
+                            className="d-md-none controls-icon pb-3"
+                            onClick={[Function]}
+                            src="menu.png"
+              />
+</div>,
+            undefined,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="Menu"
+                className="d-md-none controls-icon pb-3"
+                onClick={[Function]}
+                src="menu.png"
+/>,
+              "className": "col-12",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Menu",
+                "className": "d-md-none controls-icon pb-3",
+                "onClick": [Function],
+                "src": "menu.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          undefined,
+        ],
+        "type": "div",
+      },
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="col-12"
+/>,
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "col-12",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="row"
+>
+            <div
+                        className="col-12"
+            >
+                        <img
+                                    alt="Menu"
+                                    className="d-md-none controls-icon pb-3"
+                                    onClick={[Function]}
+                                    src="menu.png"
+                        />
+            </div>
+</div>,
+          undefined,
+          <div
+            className="row"
+>
+            <div
+                        className="col-12"
+            />
+</div>,
+        ],
+        "className": "col-12 col-md-8 offset-md-4 col-lg-9 offset-lg-3 container-fluid p-4",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-12"
+>
+                <img
+                                alt="Menu"
+                                className="d-md-none controls-icon pb-3"
+                                onClick={[Function]}
+                                src="menu.png"
+                />
+</div>,
+              undefined,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="Menu"
+                  className="d-md-none controls-icon pb-3"
+                  onClick={[Function]}
+                  src="menu.png"
+/>,
+                "className": "col-12",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Menu",
+                  "className": "d-md-none controls-icon pb-3",
+                  "onClick": [Function],
+                  "src": "menu.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            undefined,
+          ],
+          "type": "div",
+        },
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="col-12"
+/>,
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "col-12",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
