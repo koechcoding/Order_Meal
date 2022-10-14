@@ -30,6 +30,17 @@ class ImageInput extends React.Component {
             imageSelected: false,
         });
         this.fileInputRef.current.value = '';
-        this.props
+        this.props.onImageRemoved();
+    }
+    onRemovePrefill= (e)=>{
+        this.setState({
+            ...this.state,
+            fileName: '',
+            fileSize: '',
+            fileModified: '',
+            imageSelected: false,
+            prefillSelected: false,
+        });
+        this.props.onPrefillRemoved();
     }
 }
