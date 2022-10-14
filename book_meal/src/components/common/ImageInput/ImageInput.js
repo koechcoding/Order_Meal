@@ -65,6 +65,25 @@ class ImageInput extends React.Component {
             });
             return
         }
-        
+       
+        //if not unique file return
+        if(files[0].name === fileName && files[0].size === fileSize && fileModified === files[0].lastModified){
+            return
+        }
+        //ensure received file is image
+        if(files[0].type.substr(0, 6) !== 'image/'){
+            return
+        }
+
+        this.setState({
+            ...this.state,
+            file: files[0],
+            fileName: files[0].name,
+            fileSize: files[0].size,
+            fileModified: files[0].lastModified,
+            fileType: files[0].type,
+            imageSelected: true,
+        });
+        this.loadImage(files[0]);
     }
 }
