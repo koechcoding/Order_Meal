@@ -86,4 +86,61 @@ class ImageInput extends React.Component {
         });
         this.loadImage(files[0]);
     }
+
+    loadImage = (file)=>{
+        const reader = new FileReader()
+        reader.onload =(e)=>{
+            let image = new Image();
+            image.onload =()=>{
+                this.drawImage(image);
+            }
+            image.src = e.target.result;
+            this.props.onImageAdded(e.target.result);
+        }
+        reader.readAsDataURL(file)
+    }
+
+    drawImage=(image)=>{
+
+        const width = 300;
+        const height = 300;
+        let previewRatio = width/height
+
+        const imageRatio = image.width / image.height
+        const containerWidth = this.containerRef.current.clientWidth
+        const previewWidth = Math.min(containerWidth, width)
+        const previewHeight = previewWidth / previewRatio
+
+        const pixelRatio = Math.round(window.devicePixelRatio || window.screen.deviceXDPI / window.screen.logicalXDPI )
+
+        let offsetX = 0
+        let offsetY = 0
+        let scaleWidth = previewWidth
+        let scaleHeight = previewHeight / previewRatio
+
+        //crop the image
+        if(imageRatio >= previewRatio){
+            scaledWidth = scaledHeight * imageRatio;
+            offsetX = (previewWidth - scaleWidth) / 2;
+        }else {
+            scaleHeight = scaleWidth / imageRatio;
+            offsetY = (previewHeight - scaleWidth) / 2;
+        }
+
+        const canvas = this.canvasRef.current
+        const context = canvas.getContext('2d')
+        canvas.style.background = 'none'
+        canvas.width = previewWidth * pixelRatio
+        canvas.height = previewHeight * pixelRatio
+        canvas.setTransform(1, 0, 0, 1, 0, 0)
+        context.drawImage(image,
+            offsetX * pixelRatio,
+            offsetY * pixelRatio,
+            scaleWidth * pixelRatio,
+            scaledHeight * pixelRatio
+        )
+    }
+    render(){
+
+    }
 }
