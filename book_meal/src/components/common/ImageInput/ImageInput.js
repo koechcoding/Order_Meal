@@ -43,4 +43,28 @@ class ImageInput extends React.Component {
         });
         this.props.onPrefillRemoved();
     }
+    onSelectImage = (e)=>{
+        this.fileInputRef.current.click();
+    }
+
+    onFileChange =(e)=>{
+        const files = e.target.files
+        if(!files.length){
+            return
+        }
+        const {
+            size,
+            fileName,
+            fileSize,
+            fileModified
+        } = this.state;
+        if(files[0].size <= 0 || files[0].size > size *1024 * 1024){
+            this.setState({
+                ...this.state,
+                error: 'Image file is too large. Please select a smaller image'
+            });
+            return
+        }
+        
+    }
 }
