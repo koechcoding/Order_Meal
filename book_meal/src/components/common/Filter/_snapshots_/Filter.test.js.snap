@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Filter
+    onFilter={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="col-3 col-sm-2 col-lg-1 text-right"
+>
+          <label
+                    className="pt-2"
+          >
+                    Text:
+          </label>
+</div>,
+        <div
+          className="col-9 col-sm-7 col-lg-4 col-xl-3 pl-0 pr-1"
+>
+          <input
+                    className="d-inline form-control ml-0 mb-0"
+                    onChange={[Function]}
+                    placeholder="Type to filter..."
+                    type="text"
+          />
+</div>,
+        "",
+      ],
+      "className": "row mb-3",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <label
+            className="pt-2"
+>
+            Text:
+</label>,
+          "className": "col-3 col-sm-2 col-lg-1 text-right",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Text:",
+            "className": "pt-2",
+          },
+          "ref": null,
+          "rendered": "Text:",
+          "type": "label",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <input
+            className="d-inline form-control ml-0 mb-0"
+            onChange={[Function]}
+            placeholder="Type to filter..."
+            type="text"
+/>,
+          "className": "col-9 col-sm-7 col-lg-4 col-xl-3 pl-0 pr-1",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "d-inline form-control ml-0 mb-0",
+            "onChange": [Function],
+            "placeholder": "Type to filter...",
+            "type": "text",
+          },
+          "ref": Object {
+            "current": null,
+          },
+          "rendered": null,
+          "type": "input",
+        },
+        "type": "div",
+      },
+      "",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col-3 col-sm-2 col-lg-1 text-right"
+>
+            <label
+                        className="pt-2"
+            >
+                        Text:
+            </label>
+</div>,
+          <div
+            className="col-9 col-sm-7 col-lg-4 col-xl-3 pl-0 pr-1"
+>
+            <input
+                        className="d-inline form-control ml-0 mb-0"
+                        onChange={[Function]}
+                        placeholder="Type to filter..."
+                        type="text"
+            />
+</div>,
+          "",
+        ],
+        "className": "row mb-3",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <label
+              className="pt-2"
+>
+              Text:
+</label>,
+            "className": "col-3 col-sm-2 col-lg-1 text-right",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Text:",
+              "className": "pt-2",
+            },
+            "ref": null,
+            "rendered": "Text:",
+            "type": "label",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="d-inline form-control ml-0 mb-0"
+              onChange={[Function]}
+              placeholder="Type to filter..."
+              type="text"
+/>,
+            "className": "col-9 col-sm-7 col-lg-4 col-xl-3 pl-0 pr-1",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "d-inline form-control ml-0 mb-0",
+              "onChange": [Function],
+              "placeholder": "Type to filter...",
+              "type": "text",
+            },
+            "ref": Object {
+              "current": null,
+            },
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
+        },
+        "",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
