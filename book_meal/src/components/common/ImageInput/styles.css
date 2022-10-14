@@ -1,0 +1,33 @@
+.preview,
+canvas {
+  cursor: pointer;
+  width: 250px;
+  margin-left: calc(50% - 125px);
+  text-align: center; }
+
+.prompt {
+  margin: auto;
+  width: 300px;
+  max-width: 480px;
+  background-color: #eee;
+  color: #555;
+  font-size: 28px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer; }
+
+img.prompt {
+  background-color: white;
+  padding-bottom: 0; }
+
+.hint {
+  text-align: center;
+  margin-top: 0; }
+
+.inner {
+  margin: 10px;
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 5px dashed #ccc; 
+}
