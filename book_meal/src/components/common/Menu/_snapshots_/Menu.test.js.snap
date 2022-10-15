@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Menu
+    items={
+        Array [
+            Object {
+              "cost": 50,
+              "id": 0,
+              "img_url": "#",
+              "name": "name",
+            },
+            Object {
+              "cost": 50,
+              "id": 1,
+              "img_url": "#",
+              "name": "name2",
+            },
+          ]
+    }
+    onOrder={[Function]}
+    setLoading={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h5
+          className="text-center mt-2"
+/>,
+        <div
+          className="row"
+>
+          <MenuItem
+                    item={
+                              Object {
+                                        "cost": 50,
+                                        "id": 0,
+                                        "img_url": "#",
+                                        "name": "name",
+                                      }
+                    }
+                    menu={Object {}}
+                    onOrder={[Function]}
+          />
+          <MenuItem
+                    item={
+                              Object {
+                                        "cost": 50,
+                                        "id": 1,
+                                        "img_url": "#",
+                                        "name": "name2",
+                                      }
+                    }
+                    menu={Object {}}
+                    onOrder={[Function]}
+          />
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "text-center mt-2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <MenuItem
+              item={
+                            Object {
+                                          "cost": 50,
+                                          "id": 0,
+                                          "img_url": "#",
+                                          "name": "name",
+                                        }
+              }
+              menu={Object {}}
+              onOrder={[Function]}
+/>,
+            <MenuItem
+              item={
+                            Object {
+                                          "cost": 50,
+                                          "id": 1,
+                                          "img_url": "#",
+                                          "name": "name2",
+                                        }
+              }
+              menu={Object {}}
+              onOrder={[Function]}
+/>,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "item": Object {
+                "cost": 50,
+                "id": 0,
+                "img_url": "#",
+                "name": "name",
+              },
+              "menu": Object {},
+              "onOrder": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "item": Object {
+                "cost": 50,
+                "id": 1,
+                "img_url": "#",
+                "name": "name2",
+              },
+              "menu": Object {},
+              "onOrder": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h5
+            className="text-center mt-2"
+/>,
+          <div
+            className="row"
+>
+            <MenuItem
+                        item={
+                                    Object {
+                                                "cost": 50,
+                                                "id": 0,
+                                                "img_url": "#",
+                                                "name": "name",
+                                              }
+                        }
+                        menu={Object {}}
+                        onOrder={[Function]}
+            />
+            <MenuItem
+                        item={
+                                    Object {
+                                                "cost": 50,
+                                                "id": 1,
+                                                "img_url": "#",
+                                                "name": "name2",
+                                              }
+                        }
+                        menu={Object {}}
+                        onOrder={[Function]}
+            />
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "text-center mt-2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <MenuItem
+                item={
+                                Object {
+                                                "cost": 50,
+                                                "id": 0,
+                                                "img_url": "#",
+                                                "name": "name",
+                                              }
+                }
+                menu={Object {}}
+                onOrder={[Function]}
+/>,
+              <MenuItem
+                item={
+                                Object {
+                                                "cost": 50,
+                                                "id": 1,
+                                                "img_url": "#",
+                                                "name": "name2",
+                                              }
+                }
+                menu={Object {}}
+                onOrder={[Function]}
+/>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "item": Object {
+                  "cost": 50,
+                  "id": 0,
+                  "img_url": "#",
+                  "name": "name",
+                },
+                "menu": Object {},
+                "onOrder": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "item": Object {
+                  "cost": 50,
+                  "id": 1,
+                  "img_url": "#",
+                  "name": "name2",
+                },
+                "menu": Object {},
+                "onOrder": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
