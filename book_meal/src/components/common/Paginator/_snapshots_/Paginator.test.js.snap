@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paginator /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Paginator
+    onNext={[Function]}
+    onPrev={[Function]}
+    pageInfo={
+        Object {
+            "hasNext": true,
+            "hasPrev": true,
+            "nextPage": 2,
+            "prevPage": 1,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="text-center pt-0 mt-0 text-bottom"
+>
+          Showing page 
+           of 
+</p>,
+        <div
+          className="pt-1"
+>
+          <Button
+                    className="btn btn-secondary float-right btn-next"
+                    color="secondary"
+                    disabled={false}
+                    onClick={[Function]}
+                    tag="button"
+          >
+                    Next 
+          </Button>
+          <Button
+                    className="btn btn-secondary btn-prev"
+                    color="secondary"
+                    disabled={false}
+                    onClick={[Function]}
+                    tag="button"
+          >
+                     Previous
+          </Button>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Showing page ",
+            undefined,
+            " of ",
+            undefined,
+          ],
+          "className": "text-center pt-0 mt-0 text-bottom",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Showing page ",
+          undefined,
+          " of ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Button
+              className="btn btn-secondary float-right btn-next"
+              color="secondary"
+              disabled={false}
+              onClick={[Function]}
+              tag="button"
+>
+              Next 
+</Button>,
+            <Button
+              className="btn btn-secondary btn-prev"
+              color="secondary"
+              disabled={false}
+              onClick={[Function]}
+              tag="button"
+>
+               Previous
+</Button>,
+          ],
+          "className": "pt-1",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Next ",
+              "className": "btn btn-secondary float-right btn-next",
+              "color": "secondary",
+              "disabled": false,
+              "onClick": [Function],
+              "tag": "button",
+            },
+            "ref": null,
+            "rendered": "Next ",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": " Previous",
+              "className": "btn btn-secondary btn-prev",
+              "color": "secondary",
+              "disabled": false,
+              "onClick": [Function],
+              "tag": "button",
+            },
+            "ref": null,
+            "rendered": " Previous",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="text-center pt-0 mt-0 text-bottom"
+>
+            Showing page 
+             of 
+</p>,
+          <div
+            className="pt-1"
+>
+            <Button
+                        className="btn btn-secondary float-right btn-next"
+                        color="secondary"
+                        disabled={false}
+                        onClick={[Function]}
+                        tag="button"
+            >
+                        Next 
+            </Button>
+            <Button
+                        className="btn btn-secondary btn-prev"
+                        color="secondary"
+                        disabled={false}
+                        onClick={[Function]}
+                        tag="button"
+            >
+                         Previous
+            </Button>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Showing page ",
+              undefined,
+              " of ",
+              undefined,
+            ],
+            "className": "text-center pt-0 mt-0 text-bottom",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Showing page ",
+            undefined,
+            " of ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Button
+                className="btn btn-secondary float-right btn-next"
+                color="secondary"
+                disabled={false}
+                onClick={[Function]}
+                tag="button"
+>
+                Next 
+</Button>,
+              <Button
+                className="btn btn-secondary btn-prev"
+                color="secondary"
+                disabled={false}
+                onClick={[Function]}
+                tag="button"
+>
+                 Previous
+</Button>,
+            ],
+            "className": "pt-1",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Next ",
+                "className": "btn btn-secondary float-right btn-next",
+                "color": "secondary",
+                "disabled": false,
+                "onClick": [Function],
+                "tag": "button",
+              },
+              "ref": null,
+              "rendered": "Next ",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": " Previous",
+                "className": "btn btn-secondary btn-prev",
+                "color": "secondary",
+                "disabled": false,
+                "onClick": [Function],
+                "tag": "button",
+              },
+              "ref": null,
+              "rendered": " Previous",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
