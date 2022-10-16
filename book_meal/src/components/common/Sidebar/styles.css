@@ -1,0 +1,37 @@
+.controls {
+    height: 100vh;
+    min-height: 790px;
+    background-color: #eee; }
+    .controls .btn {
+      display: block;
+      width: 80%;
+      margin-top: 4.5vh;
+      margin-left: 10%;
+      transition: 0.1s all; }
+    .controls .btn:hover {
+      color: black;
+      background-color: orange; }
+    .controls .btn-logout,
+    .controls .btn-logout:hover {
+      font-size: 18px;
+      color: white;
+      padding: 10px;
+      border: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5); }
+    .controls .btn.active {
+      background-color: orange; }
+    .controls hr {
+      width: 60%;
+      display: block;
+      border-top: 2px solid #ddd; }
+    .controls .logo {
+      text-align: center;
+      display: inline-block; }
+  
+  .controls-icon {
+    width: 40px;
+    margin-left: calc(50% - 20px); }
+  
+  .controls.sidebar {
+    position: fixed; }
