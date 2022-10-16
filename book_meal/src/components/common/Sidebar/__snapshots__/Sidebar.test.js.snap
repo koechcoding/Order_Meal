@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Sidebar
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="logo-medium text-flav pt-3"
+>
+          BAM!
+</h1>,
+        <hr />,
+        undefined,
+        <hr
+          className="last"
+/>,
+        <button
+          className="btn btn-logout"
+          onClick={[Function]}
+>
+          Logout
+</button>,
+      ],
+      "className": "d-none d-md-block col-md-4 col-lg-3 controls sidebar patterns bg-teal text-center",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "BAM!",
+          "className": "logo-medium text-flav pt-3",
+        },
+        "ref": null,
+        "rendered": "BAM!",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "last",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Logout",
+          "className": "btn btn-logout",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": "button",
+      },
+    ],
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="logo-medium text-flav pt-3"
+>
+            BAM!
+</h1>,
+          <hr />,
+          undefined,
+          <hr
+            className="last"
+/>,
+          <button
+            className="btn btn-logout"
+            onClick={[Function]}
+>
+            Logout
+</button>,
+        ],
+        "className": "d-none d-md-block col-md-4 col-lg-3 controls sidebar patterns bg-teal text-center",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "BAM!",
+            "className": "logo-medium text-flav pt-3",
+          },
+          "ref": null,
+          "rendered": "BAM!",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "last",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Logout",
+            "className": "btn btn-logout",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Logout",
+          "type": "button",
+        },
+      ],
+      "type": "nav",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
