@@ -1,0 +1,19 @@
+
+header.welcome {
+    min-height: 80vh;
+    background: url("./assets/bg.jpg") no-repeat center bottom;
+    background-color: #333;
+    background-size: cover;
+    text-align: center;
+    width: 100%; 
+}
+header.welcome .logo {
+    margin-top: 10vh; 
+}
+header.welcome #slogan {
+    padding: 12px;
+    font-size: 30px;
+    background-color: rgba(0, 80, 80, 0.7); }
+    header.welcome #slogan span span {
+    color: #f5ee9e; 
+}
