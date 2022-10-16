@@ -1,0 +1,1395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Body /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Body />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <section
+        className="container-fluid text-center mt-4"
+>
+        <header>
+                <h3>
+                        About Us
+                </h3>
+        </header>
+        <div
+                className="w-100"
+        >
+                <p
+                        className="m-auto"
+                        style={
+                                Object {
+                                        "maxWidth": "700px",
+                                      }
+                        }
+                >
+                        Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.
+                </p>
+        </div>
+        <header
+                className="mt-5"
+        >
+                <h3>
+                        How We Work
+                </h3>
+        </header>
+        <p>
+                 A brief description on how to get started...
+        </p>
+        <div
+                className="row"
+        >
+                <div
+                        className="col-md-3 text-md-right"
+                >
+                        <Ionicon
+                                beat={false}
+                                color="#008080"
+                                fontSize="150px"
+                                icon="ios-log-in"
+                                rotate={false}
+                                shake={false}
+                                style={Object {}}
+                        />
+                </div>
+                <div
+                        className="col-md-9 text-md-left"
+                >
+                        <h5>
+                                Sign Up!
+                        </h5>
+                        <p>
+                                First, you will have to create an account with us.
+                        </p>
+                </div>
+        </div>
+        <div
+                className="row"
+        >
+                <div
+                        className="col-md-9 text-md-right order-2 order-md-1"
+                >
+                        <h5>
+                                Make An Order!
+                        </h5>
+                        <p>
+                                Then, order as many meals as you wish on the menu set for the day.
+                        </p>
+                </div>
+                <div
+                        className="col-md-3 text-md-left order-1 order-md-2"
+                >
+                        <Ionicon
+                                beat={false}
+                                color="#008080"
+                                fontSize="150px"
+                                icon="ios-pizza"
+                                rotate={false}
+                                shake={false}
+                                style={Object {}}
+                        />
+                </div>
+        </div>
+        <div
+                className="row"
+        >
+                <div
+                        className="col-md-3 text-md-right"
+                >
+                        <Ionicon
+                                beat={false}
+                                color="#008080"
+                                fontSize="150px"
+                                icon="ios-notifications"
+                                rotate={false}
+                                shake={false}
+                                style={Object {}}
+                        />
+                </div>
+                <div
+                        className="col-md-9 text-md-left"
+                >
+                        <h5>
+                                Get Notified!
+                        </h5>
+                        <p>
+                                Get notified when your meal has been successfully processed by our caterer.
+                        </p>
+                </div>
+        </div>
+</section>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header>
+            <h3>
+                        About Us
+            </h3>
+</header>,
+          <div
+            className="w-100"
+>
+            <p
+                        className="m-auto"
+                        style={
+                                    Object {
+                                                "maxWidth": "700px",
+                                              }
+                        }
+            >
+                        Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.
+            </p>
+</div>,
+          <header
+            className="mt-5"
+>
+            <h3>
+                        How We Work
+            </h3>
+</header>,
+          <p>
+             A brief description on how to get started...
+</p>,
+          <div
+            className="row"
+>
+            <div
+                        className="col-md-3 text-md-right"
+            >
+                        <Ionicon
+                                    beat={false}
+                                    color="#008080"
+                                    fontSize="150px"
+                                    icon="ios-log-in"
+                                    rotate={false}
+                                    shake={false}
+                                    style={Object {}}
+                        />
+            </div>
+            <div
+                        className="col-md-9 text-md-left"
+            >
+                        <h5>
+                                    Sign Up!
+                        </h5>
+                        <p>
+                                    First, you will have to create an account with us.
+                        </p>
+            </div>
+</div>,
+          <div
+            className="row"
+>
+            <div
+                        className="col-md-9 text-md-right order-2 order-md-1"
+            >
+                        <h5>
+                                    Make An Order!
+                        </h5>
+                        <p>
+                                    Then, order as many meals as you wish on the menu set for the day.
+                        </p>
+            </div>
+            <div
+                        className="col-md-3 text-md-left order-1 order-md-2"
+            >
+                        <Ionicon
+                                    beat={false}
+                                    color="#008080"
+                                    fontSize="150px"
+                                    icon="ios-pizza"
+                                    rotate={false}
+                                    shake={false}
+                                    style={Object {}}
+                        />
+            </div>
+</div>,
+          <div
+            className="row"
+>
+            <div
+                        className="col-md-3 text-md-right"
+            >
+                        <Ionicon
+                                    beat={false}
+                                    color="#008080"
+                                    fontSize="150px"
+                                    icon="ios-notifications"
+                                    rotate={false}
+                                    shake={false}
+                                    style={Object {}}
+                        />
+            </div>
+            <div
+                        className="col-md-9 text-md-left"
+            >
+                        <h5>
+                                    Get Notified!
+                        </h5>
+                        <p>
+                                    Get notified when your meal has been successfully processed by our caterer.
+                        </p>
+            </div>
+</div>,
+        ],
+        "className": "container-fluid text-center mt-4",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h3>
+              About Us
+</h3>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "About Us",
+            },
+            "ref": null,
+            "rendered": "About Us",
+            "type": "h3",
+          },
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p
+              className="m-auto"
+              style={
+                            Object {
+                                          "maxWidth": "700px",
+                                        }
+              }
+>
+              Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.
+</p>,
+            "className": "w-100",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.",
+              "className": "m-auto",
+              "style": Object {
+                "maxWidth": "700px",
+              },
+            },
+            "ref": null,
+            "rendered": "Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.",
+            "type": "p",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h3>
+              How We Work
+</h3>,
+            "className": "mt-5",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "How We Work",
+            },
+            "ref": null,
+            "rendered": "How We Work",
+            "type": "h3",
+          },
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " A brief description on how to get started...",
+          },
+          "ref": null,
+          "rendered": " A brief description on how to get started...",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-md-3 text-md-right"
+>
+                <Ionicon
+                                beat={false}
+                                color="#008080"
+                                fontSize="150px"
+                                icon="ios-log-in"
+                                rotate={false}
+                                shake={false}
+                                style={Object {}}
+                />
+</div>,
+              <div
+                className="col-md-9 text-md-left"
+>
+                <h5>
+                                Sign Up!
+                </h5>
+                <p>
+                                First, you will have to create an account with us.
+                </p>
+</div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Ionicon
+                  beat={false}
+                  color="#008080"
+                  fontSize="150px"
+                  icon="ios-log-in"
+                  rotate={false}
+                  shake={false}
+                  style={Object {}}
+/>,
+                "className": "col-md-3 text-md-right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "beat": false,
+                  "color": "#008080",
+                  "fontSize": "150px",
+                  "icon": "ios-log-in",
+                  "rotate": false,
+                  "shake": false,
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h5>
+                    Sign Up!
+</h5>,
+                  <p>
+                    First, you will have to create an account with us.
+</p>,
+                ],
+                "className": "col-md-9 text-md-left",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sign Up!",
+                  },
+                  "ref": null,
+                  "rendered": "Sign Up!",
+                  "type": "h5",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "First, you will have to create an account with us.",
+                  },
+                  "ref": null,
+                  "rendered": "First, you will have to create an account with us.",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-md-9 text-md-right order-2 order-md-1"
+>
+                <h5>
+                                Make An Order!
+                </h5>
+                <p>
+                                Then, order as many meals as you wish on the menu set for the day.
+                </p>
+</div>,
+              <div
+                className="col-md-3 text-md-left order-1 order-md-2"
+>
+                <Ionicon
+                                beat={false}
+                                color="#008080"
+                                fontSize="150px"
+                                icon="ios-pizza"
+                                rotate={false}
+                                shake={false}
+                                style={Object {}}
+                />
+</div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h5>
+                    Make An Order!
+</h5>,
+                  <p>
+                    Then, order as many meals as you wish on the menu set for the day.
+</p>,
+                ],
+                "className": "col-md-9 text-md-right order-2 order-md-1",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Make An Order!",
+                  },
+                  "ref": null,
+                  "rendered": "Make An Order!",
+                  "type": "h5",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Then, order as many meals as you wish on the menu set for the day.",
+                  },
+                  "ref": null,
+                  "rendered": "Then, order as many meals as you wish on the menu set for the day.",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Ionicon
+                  beat={false}
+                  color="#008080"
+                  fontSize="150px"
+                  icon="ios-pizza"
+                  rotate={false}
+                  shake={false}
+                  style={Object {}}
+/>,
+                "className": "col-md-3 text-md-left order-1 order-md-2",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "beat": false,
+                  "color": "#008080",
+                  "fontSize": "150px",
+                  "icon": "ios-pizza",
+                  "rotate": false,
+                  "shake": false,
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-md-3 text-md-right"
+>
+                <Ionicon
+                                beat={false}
+                                color="#008080"
+                                fontSize="150px"
+                                icon="ios-notifications"
+                                rotate={false}
+                                shake={false}
+                                style={Object {}}
+                />
+</div>,
+              <div
+                className="col-md-9 text-md-left"
+>
+                <h5>
+                                Get Notified!
+                </h5>
+                <p>
+                                Get notified when your meal has been successfully processed by our caterer.
+                </p>
+</div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Ionicon
+                  beat={false}
+                  color="#008080"
+                  fontSize="150px"
+                  icon="ios-notifications"
+                  rotate={false}
+                  shake={false}
+                  style={Object {}}
+/>,
+                "className": "col-md-3 text-md-right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "beat": false,
+                  "color": "#008080",
+                  "fontSize": "150px",
+                  "icon": "ios-notifications",
+                  "rotate": false,
+                  "shake": false,
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h5>
+                    Get Notified!
+</h5>,
+                  <p>
+                    Get notified when your meal has been successfully processed by our caterer.
+</p>,
+                ],
+                "className": "col-md-9 text-md-left",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Get Notified!",
+                  },
+                  "ref": null,
+                  "rendered": "Get Notified!",
+                  "type": "h5",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Get notified when your meal has been successfully processed by our caterer.",
+                  },
+                  "ref": null,
+                  "rendered": "Get notified when your meal has been successfully processed by our caterer.",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="container-fluid text-center mt-4"
+>
+          <header>
+                    <h3>
+                              About Us
+                    </h3>
+          </header>
+          <div
+                    className="w-100"
+          >
+                    <p
+                              className="m-auto"
+                              style={
+                                        Object {
+                                                  "maxWidth": "700px",
+                                                }
+                              }
+                    >
+                              Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.
+                    </p>
+          </div>
+          <header
+                    className="mt-5"
+          >
+                    <h3>
+                              How We Work
+                    </h3>
+          </header>
+          <p>
+                     A brief description on how to get started...
+          </p>
+          <div
+                    className="row"
+          >
+                    <div
+                              className="col-md-3 text-md-right"
+                    >
+                              <Ionicon
+                                        beat={false}
+                                        color="#008080"
+                                        fontSize="150px"
+                                        icon="ios-log-in"
+                                        rotate={false}
+                                        shake={false}
+                                        style={Object {}}
+                              />
+                    </div>
+                    <div
+                              className="col-md-9 text-md-left"
+                    >
+                              <h5>
+                                        Sign Up!
+                              </h5>
+                              <p>
+                                        First, you will have to create an account with us.
+                              </p>
+                    </div>
+          </div>
+          <div
+                    className="row"
+          >
+                    <div
+                              className="col-md-9 text-md-right order-2 order-md-1"
+                    >
+                              <h5>
+                                        Make An Order!
+                              </h5>
+                              <p>
+                                        Then, order as many meals as you wish on the menu set for the day.
+                              </p>
+                    </div>
+                    <div
+                              className="col-md-3 text-md-left order-1 order-md-2"
+                    >
+                              <Ionicon
+                                        beat={false}
+                                        color="#008080"
+                                        fontSize="150px"
+                                        icon="ios-pizza"
+                                        rotate={false}
+                                        shake={false}
+                                        style={Object {}}
+                              />
+                    </div>
+          </div>
+          <div
+                    className="row"
+          >
+                    <div
+                              className="col-md-3 text-md-right"
+                    >
+                              <Ionicon
+                                        beat={false}
+                                        color="#008080"
+                                        fontSize="150px"
+                                        icon="ios-notifications"
+                                        rotate={false}
+                                        shake={false}
+                                        style={Object {}}
+                              />
+                    </div>
+                    <div
+                              className="col-md-9 text-md-left"
+                    >
+                              <h5>
+                                        Get Notified!
+                              </h5>
+                              <p>
+                                        Get notified when your meal has been successfully processed by our caterer.
+                              </p>
+                    </div>
+          </div>
+</section>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <header>
+              <h3>
+                            About Us
+              </h3>
+</header>,
+            <div
+              className="w-100"
+>
+              <p
+                            className="m-auto"
+                            style={
+                                          Object {
+                                                        "maxWidth": "700px",
+                                                      }
+                            }
+              >
+                            Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.
+              </p>
+</div>,
+            <header
+              className="mt-5"
+>
+              <h3>
+                            How We Work
+              </h3>
+</header>,
+            <p>
+               A brief description on how to get started...
+</p>,
+            <div
+              className="row"
+>
+              <div
+                            className="col-md-3 text-md-right"
+              >
+                            <Ionicon
+                                          beat={false}
+                                          color="#008080"
+                                          fontSize="150px"
+                                          icon="ios-log-in"
+                                          rotate={false}
+                                          shake={false}
+                                          style={Object {}}
+                            />
+              </div>
+              <div
+                            className="col-md-9 text-md-left"
+              >
+                            <h5>
+                                          Sign Up!
+                            </h5>
+                            <p>
+                                          First, you will have to create an account with us.
+                            </p>
+              </div>
+</div>,
+            <div
+              className="row"
+>
+              <div
+                            className="col-md-9 text-md-right order-2 order-md-1"
+              >
+                            <h5>
+                                          Make An Order!
+                            </h5>
+                            <p>
+                                          Then, order as many meals as you wish on the menu set for the day.
+                            </p>
+              </div>
+              <div
+                            className="col-md-3 text-md-left order-1 order-md-2"
+              >
+                            <Ionicon
+                                          beat={false}
+                                          color="#008080"
+                                          fontSize="150px"
+                                          icon="ios-pizza"
+                                          rotate={false}
+                                          shake={false}
+                                          style={Object {}}
+                            />
+              </div>
+</div>,
+            <div
+              className="row"
+>
+              <div
+                            className="col-md-3 text-md-right"
+              >
+                            <Ionicon
+                                          beat={false}
+                                          color="#008080"
+                                          fontSize="150px"
+                                          icon="ios-notifications"
+                                          rotate={false}
+                                          shake={false}
+                                          style={Object {}}
+                            />
+              </div>
+              <div
+                            className="col-md-9 text-md-left"
+              >
+                            <h5>
+                                          Get Notified!
+                            </h5>
+                            <p>
+                                          Get notified when your meal has been successfully processed by our caterer.
+                            </p>
+              </div>
+</div>,
+          ],
+          "className": "container-fluid text-center mt-4",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h3>
+                About Us
+</h3>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "About Us",
+              },
+              "ref": null,
+              "rendered": "About Us",
+              "type": "h3",
+            },
+            "type": "header",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p
+                className="m-auto"
+                style={
+                                Object {
+                                                "maxWidth": "700px",
+                                              }
+                }
+>
+                Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.
+</p>,
+              "className": "w-100",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.",
+                "className": "m-auto",
+                "style": Object {
+                  "maxWidth": "700px",
+                },
+              },
+              "ref": null,
+              "rendered": "Book a meal allows you to book meals from our daily curated menu with meals from all over the world. Our chefs will always leave you wanting more.",
+              "type": "p",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h3>
+                How We Work
+</h3>,
+              "className": "mt-5",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "How We Work",
+              },
+              "ref": null,
+              "rendered": "How We Work",
+              "type": "h3",
+            },
+            "type": "header",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " A brief description on how to get started...",
+            },
+            "ref": null,
+            "rendered": " A brief description on how to get started...",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-md-3 text-md-right"
+>
+                  <Ionicon
+                                    beat={false}
+                                    color="#008080"
+                                    fontSize="150px"
+                                    icon="ios-log-in"
+                                    rotate={false}
+                                    shake={false}
+                                    style={Object {}}
+                  />
+</div>,
+                <div
+                  className="col-md-9 text-md-left"
+>
+                  <h5>
+                                    Sign Up!
+                  </h5>
+                  <p>
+                                    First, you will have to create an account with us.
+                  </p>
+</div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Ionicon
+                    beat={false}
+                    color="#008080"
+                    fontSize="150px"
+                    icon="ios-log-in"
+                    rotate={false}
+                    shake={false}
+                    style={Object {}}
+/>,
+                  "className": "col-md-3 text-md-right",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "beat": false,
+                    "color": "#008080",
+                    "fontSize": "150px",
+                    "icon": "ios-log-in",
+                    "rotate": false,
+                    "shake": false,
+                    "style": Object {},
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h5>
+                      Sign Up!
+</h5>,
+                    <p>
+                      First, you will have to create an account with us.
+</p>,
+                  ],
+                  "className": "col-md-9 text-md-left",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign Up!",
+                    },
+                    "ref": null,
+                    "rendered": "Sign Up!",
+                    "type": "h5",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "First, you will have to create an account with us.",
+                    },
+                    "ref": null,
+                    "rendered": "First, you will have to create an account with us.",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-md-9 text-md-right order-2 order-md-1"
+>
+                  <h5>
+                                    Make An Order!
+                  </h5>
+                  <p>
+                                    Then, order as many meals as you wish on the menu set for the day.
+                  </p>
+</div>,
+                <div
+                  className="col-md-3 text-md-left order-1 order-md-2"
+>
+                  <Ionicon
+                                    beat={false}
+                                    color="#008080"
+                                    fontSize="150px"
+                                    icon="ios-pizza"
+                                    rotate={false}
+                                    shake={false}
+                                    style={Object {}}
+                  />
+</div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h5>
+                      Make An Order!
+</h5>,
+                    <p>
+                      Then, order as many meals as you wish on the menu set for the day.
+</p>,
+                  ],
+                  "className": "col-md-9 text-md-right order-2 order-md-1",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Make An Order!",
+                    },
+                    "ref": null,
+                    "rendered": "Make An Order!",
+                    "type": "h5",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Then, order as many meals as you wish on the menu set for the day.",
+                    },
+                    "ref": null,
+                    "rendered": "Then, order as many meals as you wish on the menu set for the day.",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Ionicon
+                    beat={false}
+                    color="#008080"
+                    fontSize="150px"
+                    icon="ios-pizza"
+                    rotate={false}
+                    shake={false}
+                    style={Object {}}
+/>,
+                  "className": "col-md-3 text-md-left order-1 order-md-2",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "beat": false,
+                    "color": "#008080",
+                    "fontSize": "150px",
+                    "icon": "ios-pizza",
+                    "rotate": false,
+                    "shake": false,
+                    "style": Object {},
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-md-3 text-md-right"
+>
+                  <Ionicon
+                                    beat={false}
+                                    color="#008080"
+                                    fontSize="150px"
+                                    icon="ios-notifications"
+                                    rotate={false}
+                                    shake={false}
+                                    style={Object {}}
+                  />
+</div>,
+                <div
+                  className="col-md-9 text-md-left"
+>
+                  <h5>
+                                    Get Notified!
+                  </h5>
+                  <p>
+                                    Get notified when your meal has been successfully processed by our caterer.
+                  </p>
+</div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Ionicon
+                    beat={false}
+                    color="#008080"
+                    fontSize="150px"
+                    icon="ios-notifications"
+                    rotate={false}
+                    shake={false}
+                    style={Object {}}
+/>,
+                  "className": "col-md-3 text-md-right",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "beat": false,
+                    "color": "#008080",
+                    "fontSize": "150px",
+                    "icon": "ios-notifications",
+                    "rotate": false,
+                    "shake": false,
+                    "style": Object {},
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h5>
+                      Get Notified!
+</h5>,
+                    <p>
+                      Get notified when your meal has been successfully processed by our caterer.
+</p>,
+                  ],
+                  "className": "col-md-9 text-md-left",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Get Notified!",
+                    },
+                    "ref": null,
+                    "rendered": "Get Notified!",
+                    "type": "h5",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Get notified when your meal has been successfully processed by our caterer.",
+                    },
+                    "ref": null,
+                    "rendered": "Get notified when your meal has been successfully processed by our caterer.",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
