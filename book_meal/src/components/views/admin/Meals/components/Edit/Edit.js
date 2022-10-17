@@ -46,4 +46,20 @@ class EditModal extends React.Component {
             image: null,
         });
     }
+
+    onEdit=()=>{
+        //on success...
+        const resolve=()=>{
+            this.setState({
+                ...this.state,
+                success: true,
+                error: null,
+                image: null
+            });
+            this.props.onChange();
+            this.props.setLoading(false);
+            setTimeout(this.props.toggle, 1000);
+        }
+        //on failure
+    }
 }
