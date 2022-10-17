@@ -6,24 +6,24 @@ Reimplementation of Andela Book A Meal developer challenge UI.
 Note: The UI template is here.
 
 Table of Content
-Introduction
-The Client Side
-Color Palette
-Fonts
-Images and Textures
-Pages
-Landing Page
-Sign Up Page
-Login Page
-Caterer Meals Management Page
-Caterer Menu Management
-Caterer Orders
-Caterer Order History
-Customer Menu
-Customer Orders
-Customer Notifications
-Customer Order History.
-Introduction
+    Introduction
+    The Client Side
+    Color Palette
+    Fonts
+    Images and Textures
+    Pages
+    Landing Page
+    Sign Up Page
+    Login Page
+    Caterer Meals Management Page
+    Caterer Menu Management
+    Caterer Orders
+    Caterer Order History
+    Customer Menu
+    Customer Orders
+    Customer Notifications
+    Customer Order History.
+    Introduction
 The project entails having a caterer as the site administrator and can add meals to the application as well as set menus for a particular day. The customers, after signing up first, are then allowed to book meals online.
 
 The Client Side
