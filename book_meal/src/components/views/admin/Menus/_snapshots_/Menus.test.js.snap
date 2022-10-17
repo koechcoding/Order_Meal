@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menus /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Menus
+    isOpen={false}
+    setLoading={[Function]}
+    toggle={[Function]}
+    toggleMenu={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <MenuItemsTable
+          data={Object {}}
+          onNext={[Function]}
+          onPrev={[Function]}
+          pageInfo={undefined}
+          toggleDelete={[Function]}
+          toggleEdit={[Function]}
+/>,
+        <CreateModal
+          isOpen={undefined}
+          onChange={[Function]}
+          setLoading={[Function]}
+          toggle={[Function]}
+          toggleMenu={[Function]}
+/>,
+        <EditModal
+          isOpen={false}
+          menuItem={Object {}}
+          onChange={[Function]}
+          setLoading={[Function]}
+          toggle={[Function]}
+          toggleMenu={[Function]}
+/>,
+        <DeleteModal
+          isOpen={false}
+          menuItem={Object {}}
+          onChange={[Function]}
+          setLoading={[Function]}
+          toggle={[Function]}
+          toggleMenu={[Function]}
+/>,
+        <MenuTypes
+          isOpen={false}
+          setLoading={[Function]}
+          toggle={[Function]}
+          toggleMenu={[Function]}
+/>,
+      ],
+      "contentFilter": <Filter
+        onFilter={[Function]}
+/>,
+      "contentTop": <div
+        className="col-12 mb-2 pr-0 pr-sm-2"
+>
+        <h5
+                className="d-inline-block"
+        >
+                Today's Menu
+        </h5>
+        <ButtonDropdown
+                className="float-right"
+                isOpen={undefined}
+                toggle={[Function]}
+        >
+                <DropdownToggle
+                        aria-haspopup={true}
+                        caret={true}
+                        className="btn-secondary"
+                        color="secondary"
+                >
+                        Manage
+                </DropdownToggle>
+                <DropdownMenu
+                        flip={true}
+                        tag="div"
+                >
+                        <DropdownItem
+                                onClick={[Function]}
+                                tag="button"
+                                toggle={true}
+                        >
+                                Manage Menus
+                        </DropdownItem>
+                        <DropdownItem
+                                onClick={[Function]}
+                                tag="button"
+                                toggle={true}
+                        >
+                                Add Meal To Menu
+                        </DropdownItem>
+                </DropdownMenu>
+        </ButtonDropdown>
+</div>,
+      "isOpen": false,
+      "setLoading": [Function],
+      "toggle": [Function],
+      "toggleMenu": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {},
+          "onNext": [Function],
+          "onPrev": [Function],
+          "pageInfo": undefined,
+          "toggleDelete": [Function],
+          "toggleEdit": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": undefined,
+          "onChange": [Function],
+          "setLoading": [Function],
+          "toggle": [Function],
+          "toggleMenu": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": false,
+          "menuItem": Object {},
+          "onChange": [Function],
+          "setLoading": [Function],
+          "toggle": [Function],
+          "toggleMenu": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": false,
+          "menuItem": Object {},
+          "onChange": [Function],
+          "setLoading": [Function],
+          "toggle": [Function],
+          "toggleMenu": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": false,
+          "setLoading": [Function],
+          "toggle": [Function],
+          "toggleMenu": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <MenuItemsTable
+            data={Object {}}
+            onNext={[Function]}
+            onPrev={[Function]}
+            pageInfo={undefined}
+            toggleDelete={[Function]}
+            toggleEdit={[Function]}
+/>,
+          <CreateModal
+            isOpen={undefined}
+            onChange={[Function]}
+            setLoading={[Function]}
+            toggle={[Function]}
+            toggleMenu={[Function]}
+/>,
+          <EditModal
+            isOpen={false}
+            menuItem={Object {}}
+            onChange={[Function]}
+            setLoading={[Function]}
+            toggle={[Function]}
+            toggleMenu={[Function]}
+/>,
+          <DeleteModal
+            isOpen={false}
+            menuItem={Object {}}
+            onChange={[Function]}
+            setLoading={[Function]}
+            toggle={[Function]}
+            toggleMenu={[Function]}
+/>,
+          <MenuTypes
+            isOpen={false}
+            setLoading={[Function]}
+            toggle={[Function]}
+            toggleMenu={[Function]}
+/>,
+        ],
+        "contentFilter": <Filter
+          onFilter={[Function]}
+/>,
+        "contentTop": <div
+          className="col-12 mb-2 pr-0 pr-sm-2"
+>
+          <h5
+                    className="d-inline-block"
+          >
+                    Today's Menu
+          </h5>
+          <ButtonDropdown
+                    className="float-right"
+                    isOpen={undefined}
+                    toggle={[Function]}
+          >
+                    <DropdownToggle
+                              aria-haspopup={true}
+                              caret={true}
+                              className="btn-secondary"
+                              color="secondary"
+                    >
+                              Manage
+                    </DropdownToggle>
+                    <DropdownMenu
+                              flip={true}
+                              tag="div"
+                    >
+                              <DropdownItem
+                                        onClick={[Function]}
+                                        tag="button"
+                                        toggle={true}
+                              >
+                                        Manage Menus
+                              </DropdownItem>
+                              <DropdownItem
+                                        onClick={[Function]}
+                                        tag="button"
+                                        toggle={true}
+                              >
+                                        Add Meal To Menu
+                              </DropdownItem>
+                    </DropdownMenu>
+          </ButtonDropdown>
+</div>,
+        "isOpen": false,
+        "setLoading": [Function],
+        "toggle": [Function],
+        "toggleMenu": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {},
+            "onNext": [Function],
+            "onPrev": [Function],
+            "pageInfo": undefined,
+            "toggleDelete": [Function],
+            "toggleEdit": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": undefined,
+            "onChange": [Function],
+            "setLoading": [Function],
+            "toggle": [Function],
+            "toggleMenu": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": false,
+            "menuItem": Object {},
+            "onChange": [Function],
+            "setLoading": [Function],
+            "toggle": [Function],
+            "toggleMenu": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": false,
+            "menuItem": Object {},
+            "onChange": [Function],
+            "setLoading": [Function],
+            "toggle": [Function],
+            "toggleMenu": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": false,
+            "setLoading": [Function],
+            "toggle": [Function],
+            "toggleMenu": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

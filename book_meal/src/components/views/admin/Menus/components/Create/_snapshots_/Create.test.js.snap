@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Create /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CreateModal
+    onChange={[Function]}
+    setLoading={[Function]}
+    toggle={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "body": <div>
+        <div
+                className="pl-4 pr-4"
+        >
+                <label>
+                         Meal Name 
+                </label>
+                <Async
+                        autoload={true}
+                        cache={Object {}}
+                        fitlerOptions={[Function]}
+                        ignoreAccents={true}
+                        ignoreCase={true}
+                        loadOptions={[Function]}
+                        loadingPlaceholder="Loading..."
+                        name="meal"
+                        onChange={[Function]}
+                        options={Array []}
+                        searchPromptText="Type to search"
+                        value={undefined}
+                >
+                        [Function]
+                </Async>
+                <label
+                        className="mt-3"
+                >
+                         Select Menu 
+                </label>
+                <Async
+                        autoload={true}
+                        cache={Object {}}
+                        fitlerOptions={[Function]}
+                        ignoreAccents={true}
+                        ignoreCase={true}
+                        loadOptions={[Function]}
+                        loadingPlaceholder="Loading..."
+                        name="menu"
+                        onChange={[Function]}
+                        options={Array []}
+                        searchPromptText="Type to search"
+                        value={undefined}
+                >
+                        [Function]
+                </Async>
+                <label
+                        className="mt-3"
+                >
+                        Quantity
+                </label>
+                <Input
+                        name="quantity"
+                        onChange={[Function]}
+                        type="text"
+                        value={1}
+                />
+        </div>
+</div>,
+      "footer": <Button
+        className="m-auto"
+        color="primary"
+        onClick={[Function]}
+        tag="button"
+>
+        Save Item
+</Button>,
+      "isOpen": undefined,
+      "onOpened": [Function],
+      "title": "Add Meal To Menu",
+      "toggle": [Function],
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "body": <div>
+          <div
+                    className="pl-4 pr-4"
+          >
+                    <label>
+                               Meal Name 
+                    </label>
+                    <Async
+                              autoload={true}
+                              cache={Object {}}
+                              fitlerOptions={[Function]}
+                              ignoreAccents={true}
+                              ignoreCase={true}
+                              loadOptions={[Function]}
+                              loadingPlaceholder="Loading..."
+                              name="meal"
+                              onChange={[Function]}
+                              options={Array []}
+                              searchPromptText="Type to search"
+                              value={undefined}
+                    >
+                              [Function]
+                    </Async>
+                    <label
+                              className="mt-3"
+                    >
+                               Select Menu 
+                    </label>
+                    <Async
+                              autoload={true}
+                              cache={Object {}}
+                              fitlerOptions={[Function]}
+                              ignoreAccents={true}
+                              ignoreCase={true}
+                              loadOptions={[Function]}
+                              loadingPlaceholder="Loading..."
+                              name="menu"
+                              onChange={[Function]}
+                              options={Array []}
+                              searchPromptText="Type to search"
+                              value={undefined}
+                    >
+                              [Function]
+                    </Async>
+                    <label
+                              className="mt-3"
+                    >
+                              Quantity
+                    </label>
+                    <Input
+                              name="quantity"
+                              onChange={[Function]}
+                              type="text"
+                              value={1}
+                    />
+          </div>
+</div>,
+        "footer": <Button
+          className="m-auto"
+          color="primary"
+          onClick={[Function]}
+          tag="button"
+>
+          Save Item
+</Button>,
+        "isOpen": undefined,
+        "onOpened": [Function],
+        "title": "Add Meal To Menu",
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
