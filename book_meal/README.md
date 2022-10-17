@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+Book A Meal pizza
+Build Status Coverage Status
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Reimplementation of Andela Book A Meal developer challenge UI.
 
-## Available Scripts
+Note: The UI template is here.
 
-In the project directory, you can run:
+Table of Content
+Introduction
+The Client Side
+Color Palette
+Fonts
+Images and Textures
+Pages
+Landing Page
+Sign Up Page
+Login Page
+Caterer Meals Management Page
+Caterer Menu Management
+Caterer Orders
+Caterer Order History
+Customer Menu
+Customer Orders
+Customer Notifications
+Customer Order History.
+Introduction
+The project entails having a caterer as the site administrator and can add meals to the application as well as set menus for a particular day. The customers, after signing up first, are then allowed to book meals online.
 
-### `npm start`
+The Client Side
+This is the frontend part of the application and will involve building from the ground up a user interface without the use of UI frontend frameworks such as Bootstrap or Foundation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The color palette was generated using coolors.co which is a tool for generating non-crashing colors.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The wireframes are built using wireframe.cc.
 
-### `npm test`
+Color Palette
+The following is the chosen scheme:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Coolors Chosen Palette
 
-### `npm run build`
+Fonts
+The following are the fonts used for this project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Nunito (Google Fonts)
+Leckerli One (Google Fonts)
+Images and Textures
+The following are the images and textures used for this project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Photo by Dan Gold on Unsplash.
+Photo by Casey Lee on Unsplash.
+Photo by Robin Stickel on Unsplash.
+Photo by Joseph Gonzalez on Unsplash.
+Photo by Tran Mau Trin Tam on Unsplash.
+Texture background pattern.
+Hamburger menu icon.
+Pages
+Here we will show the wireframes of the main pages. The heirarchy of the application is as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Map
 
-### `npm run eject`
+The web application will have the following pages:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Landing Page
+This will be the first page any user of the application will land on. The following is the the wireframe of this page:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Landing Page Wireframe
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+From here the user can either choose to login or sign up as well as see some of the menus available for that particular day.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Sign Up Page
+This will be used to create an account by a new user. The following is this page's wireframe:
 
-## Learn More
+Sign Up Page Wireframe
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Note: The administrator does not sign up and he/she will have a default account.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Login Page
+This page will be used by both the adminstrator(the caterer) and the customers. The two will be differentiated using roles on the server.
 
-### Code Splitting
+Login Page Wireframe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Caterer Meals Management Page
+This is where the administrator will manage the meals in the application.
 
-### Analyzing the Bundle Size
+Caterer Meals Management Frame
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Caterer Menu Management
+Here the caterer can set the menu for a specific day
 
-### Making a Progressive Web App
+Caterer Set Menu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Caterer Orders
+Here, the caterer will be able to see meals ordered by the customer.
 
-### Advanced Configuration
+Caterer Orders
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Caterer Order History
+Here the caterer can view the history of orders made by customers.
 
-### Deployment
+Caterer Order History 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Customer Menu
+Here, the user can view what has been set on the menu and make orders.
 
-### `npm run build` fails to minify
+User Menu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Customer Orders
+Here the customer can see and track the orders they made. After it has been approved by the caterer, the status of the order will also change and he/she can see this.
+
+User Orders
+
+Customer Notifications
+Here the customer will get updates on new meals and when the caterer sets the menu.
+
+User Notifications
+
+Customer Order History.
+Here the customer can see their order history.
+
+User Order History
