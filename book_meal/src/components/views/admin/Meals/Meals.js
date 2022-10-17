@@ -9,7 +9,7 @@ import EditModal from './components/Edit';
 import DeleteModal from './components/Delete';
 import axios from 'src/axios';
 
-import { singleError, paginationInfo} from 'src/utils';
+import { singleError, paginationInfo } from 'src/utils';
 
 class Meals extends React.Component {
 
@@ -119,4 +119,73 @@ class Meals extends React.Component {
             search: this.state.search
         });
     }
+
+    render() {
+        const { 
+            data,
+            error,
+            pageInfo,
+            toEdit,
+            editIsOpen,
+            createIsOpen,
+            toDelete,
+            deleteIsOpen,
+        } = this.state;
+
+
+        const contentTop = (
+            <div className="col-12 mb-2 pr-0 pr-sm-2">
+                <h5 className="d-inline-block">Manage Meals</h5>
+                <button onClick={this.toggleCreate} className="btn btn-secondary float-right">
+                    Add New
+                </button>
+            </div>
+        );
+
+        const contentFilter = (
+            <Filter onFilter={this.onFilter} />
+        );
+
+        return (
+            <Content 
+                {...this.props}
+                contentTop={contentTop} 
+                contentFilter={contentFilter}>
+            
+                { error && <Alert color="danger"> { singleError(error) }</Alert> }
+                     <MealsTable 
+                         data={data}
+                         pageInfo={pageInfo}
+                         onPrev={this.onPageChange}
+                         onNext={this.onPageChange}
+                         toggleEdit={this.toggleEdit} 
+                         toggleDelete={this.toggleDelete} />
+                    <CreateModal 
+                        {...this.props}
+                        onChange={this.fetchMeals}
+                        isOpen={createIsOpen} 
+                        toggle={this.toggleCreate} />
+
+                    <EditModal 
+                        {...this.props}
+                        meal={toEdit} 
+                        onChange={this.fetchMeals}
+                        isOpen={editIsOpen} 
+                        toggle={this.toggleEdit}/>
+
+                    <DeleteModal 
+                        {...this.props}
+                        meal={toDelete} 
+                        onChange={this.fetchMeals}
+                        isOpen={deleteIsOpen} 
+                        toggle={this.toggleDelete}/>
+            </Content>
+        );
+    }
 }
+
+Meals.propTypes = {
+    setLoading: PropTypes.func.isRequired,
+};
+
+export default Meals;
