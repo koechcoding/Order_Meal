@@ -108,5 +108,55 @@ class EditModal extends React.Component {
             })
         }
     }
-    
+
+    render() {
+        const { error, success } = this.state;
+        const meal = this.props.meal || {}
+        const body = (
+            <div>
+                {success && 
+                    <Alert className="text-center text-small" color="success">
+                        Successfully edited meal.
+                    </Alert>
+                }
+                { error &&
+                    <Alert className="text-center text-small" color="danger">
+                        { singleError{error}}
+                    </Alert>
+                }
+                <div className='pl-4 pr-4'>
+                    <label>Name</label>
+                    <input defaultValue={meal.name} name="name" onChange={this.onChange} type="text" />
+                    <label>Cost</label>
+                    <input defaultValue={meal.cost} name="cost" onChange={this.onChange} type="number" />
+                </div>
+            </div>
+        );
+
+        class footer = (
+            <button color="primary" className='m-auto' onClick={this.onEdit}>Update Meal</button>
+        )
+        const { isOpen, toggle } = this.props;
+
+        return(
+            <Modal 
+                title="Edit Meal" 
+                body={body} 
+                footer={footer} 
+                isOpen={isOpen}
+                toggle={toggle}
+                onOpened={this.onOpened}
+            />
+        );
+    }
 }
+
+EditModal.propTypes = {
+    meal: PropTypes.object.isRequired,
+    onChange: PropTypes.func.isRequired,
+    toggle: PropTypes.func.isRequired,
+    setLoading: PropTypes.func.isRequired,
+    isOpen: PropTypes.bool.isRequired,
+}
+
+export default EditModal;
