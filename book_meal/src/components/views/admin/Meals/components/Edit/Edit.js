@@ -7,61 +7,70 @@ import { Alert, Input, Button } from 'reactstrap';
 import { singleError } from 'src/utils';
 import { IMAGES_UPLOAD_URL, IMAGE_UPLOAD_PRESET } from 'src/constants';
 
+
 class EditModal extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             ...props.meal
         }
     }
 
-    onImageAdded=(data)=>{
+    onImageAdded = (data) => {
         this.setState({
             ...this.state,
             image: data,
         });
     }
 
-    onImageRemoved=()=>{
+    onImageRemoved = () => {
         this.setState({
             ...this.state,
             image: null,
-        });
+        })
     }
 
-    onPrefillRemoved=()=>{
+    onPrefillRemoved = () => {
         this.setState({
             ...this.state,
             image: null,
-            img_url: "#",
+            img_url: '#',
         });
     }
 
-    onOpened=()=>{
+    onOpened = () => {
         this.setState({
             ...this.state,
             error: null,
             success: false,
             image: null,
-        });
+        })
     }
 
-    onEdit=()=>{
-        //on success...
-        const resolve=()=>{
+    onChange = (e) => {
+        this.setState({
+            ...this.state,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    onEdit = () => {
+        // on success...
+        const resolve = () => {
             this.setState({
                 ...this.state,
                 success: true,
                 error: null,
-                image: null
+                image: null,
             });
             this.props.onChange();
             this.props.setLoading(false);
             setTimeout(this.props.toggle, 1000);
         }
-        //on failure
-        const reject = (response)=>{
+
+        // on failure...
+        const reject = (response) => {
             this.setState({
                 ...this.state,
                 error: response,
@@ -71,39 +80,39 @@ class EditModal extends React.Component {
         }
 
         this.props.setLoading(true);
-        
-        const { image, name, cost, img_url} = this.state;
-        if (image){
+
+        const { image, name, cost, img_url } = this.state;
+        if (image) {
             const imageUpload = {
                 file: image,
                 upload_preset: IMAGE_UPLOAD_PRESET
             };
 
-            // delete auth headers...
-            delete axios.default.headers.common.Authorization;
-            delete axios.default.headers.common['Access-Control-Allow-Origin'];
+            // delete auth headers..
+            delete axios.defaults.headers.common.Authorization;
+            delete axios.defaults.headers.common['Access-Control-Allow-Origin'];
             // image upload...
-            axios.post(IMAGES_UPLOAD_URL, imageUpload).then(({data}) => {
+            axios.post(IMAGES_UPLOAD_URL, imageUpload).then(({ data }) => {
                 axios.auth();
-                axios.put('/meals/${this.props.meal.id', {
-                    name,
-                    cost,
-                    img_url: data.secure_url
-                }).then(()=>{
-                    resolve
-                }).catch(({ response })=>{
+                axios.put(`/meals/${this.props.meal.id}`, { 
+                    name, 
+                    cost, 
+                    img_url: data.secure_url 
+                }).then(() => {
+                    resolve();
+                }).catch(({ response }) => {
                     reject(response)
                 });
-            }).catch(({response}) => {
-                //restore headers
+
+            }).catch(({ response }) => {
+                // restore headers
                 axios.auth();
                 reject(response);
             });
-
-        }else {
-            axios.put('/meals/${this.props.meal.id}', {name, cost, img_url}).then(()=>{
+        } else {
+            axios.put(`/meals/${this.props.meal.id}`, { name, cost, img_url }).then(() => {
                 resolve();
-            }).catch(({ response}) =>{
+            }).catch(({ response }) => {
                 reject(response);
             })
         }
@@ -114,31 +123,38 @@ class EditModal extends React.Component {
         const meal = this.props.meal || {}
         const body = (
             <div>
-                {success && 
-                    <Alert className="text-center text-small" color="success">
-                        Successfully edited meal.
-                    </Alert>
+                {success &&
+                        <Alert className="text-center text-small" color="success">
+                            Successfully edited meal.
+                        </Alert>
                 }
-                { error &&
-                    <Alert className="text-center text-small" color="danger">
-                        { singleError{error}}
-                    </Alert>
+                {error &&
+                        <Alert className="text-center text-small" color="danger">
+                            { singleError(error) }
+                        </Alert>
                 }
-                <div className='pl-4 pr-4'>
-                    <label>Name</label>
-                    <input defaultValue={meal.name} name="name" onChange={this.onChange} type="text" />
-                    <label>Cost</label>
-                    <input defaultValue={meal.cost} name="cost" onChange={this.onChange} type="number" />
+
+                <ImageInput 
+                    prefill={meal.img_url}
+                    onImageAdded={this.onImageAdded} 
+                    onImageRemoved={this.onImageRemoved}
+                    onPrefillRemoved={this.onPrefillRemoved}
+                />
+                <div className="pl-4 pr-4">
+                    <label> Name </label>
+                    <Input defaultValue={meal.name} name="name" onChange={this.onChange} type="text" />
+                    <label> Cost </label>
+                    <Input defaultValue={meal.cost} name="cost" onChange={this.onChange} type="number" />
                 </div>
             </div>
         );
 
-        class footer = (
-            <button color="primary" className='m-auto' onClick={this.onEdit}>Update Meal</button>
+        const footer = (
+            <Button color="primary" className="m-auto" onClick={this.onEdit}>Update Meal</Button>
         )
         const { isOpen, toggle } = this.props;
 
-        return(
+        return (
             <Modal 
                 title="Edit Meal" 
                 body={body} 
