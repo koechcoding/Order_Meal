@@ -143,7 +143,30 @@ class EditModal extends React.Component {
         const {isOpen, toggle } = this.props;
         const { error, success, meal, menu} = this.state;
         const body =(
-            
+            <div>
+                {success &&
+                  <Alert className="text-center text-small" color="success">
+                      Successfully updated.
+                  </Alert>
+                }
+                
+                {error &&
+                    <Alert className="text-center text-small" color="danger">
+                        { singleError(error)}
+                    </Alert>
+                }
+                <div className='pl-4 pr-4'>
+                    <label>Meal Name</label>
+                    <Async
+                       name="meal"
+                       value={meal}
+                       onChange={this.setSelectedMeal}
+                       loadOptions={_.throttle(this.fetchMeals, 500)}
+                       filterOptions={(options) =>{ return options;}}
+                    />
+                    <label className='mt-3'>Select Menu</label>
+                </div>
+            </div>
         )
     }
 }
