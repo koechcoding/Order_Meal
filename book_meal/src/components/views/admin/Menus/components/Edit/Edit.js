@@ -71,4 +71,18 @@ class EditModal extends React.Component {
             [e.target.name]: e.target.value
         })
     }
-}
+
+    fetchMenus = (input, callback) => {
+        axios.get(`/menus?search=${input}&per_page=5`).then(({ data }) => {
+            const menus = data.menus.map((menu) => {
+                return { value: menu.id, label: menu.name }
+            });
+            callback(null, { options: menus });
+        }).catch(({ response }) => {
+            this.setState({
+                ...this.state,
+                error: response
+            });
+            callback(response, null);
+        });
+    };
