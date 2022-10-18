@@ -32,6 +32,19 @@ class Delete extends React.Component {
     }
 
     render(){
-        
+        const { menu ={}} = this.props;
+        const { error } = this.state;
+        const body = (
+            <div>
+                {error && 
+                   <Alert className="text-center text-small" color="danger">
+                       { singleError(error) }
+                   </Alert>
+                }
+                <p className='text-center'>
+                    Delete this menu (<b>{menu.name}</b>)?
+                </p>
+            </div>
+        );
     }
 }
