@@ -165,8 +165,17 @@ class EditModal extends React.Component {
                        filterOptions={(options) =>{ return options;}}
                     />
                     <label className='mt-3'>Select Menu</label>
+                    <Async 
+                       name="menu"
+                       value={menu}
+                       onChange={this.setSelectedMenu}
+                       loadOptions={_.throttle(this.fetchMenus, 500)}
+                       filterOptions={(options)=>{return options;}}
+                    />
+                    <label className='mt-3'>Quantity</label>
+                    <input name="quantity" value={this.state.quantity} onChange={this.onChange} type="text" />
                 </div>
             </div>
-        )
+        );
     }
 }
