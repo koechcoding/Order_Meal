@@ -44,8 +44,31 @@ class EditModal extends React.Component {
                 menu: null,
             }
             if(menuItem['meal.id']){
-                
+                defaultValues.meal ={
+                    value: menuItem['meal.id'],
+                    label: menuItem['meal.name']
+                }
             }
+            if (menuItem['menu.id']) {
+                defaultValues.menu = {
+                    value: menuItem['menu.id'], 
+                    label: menuItem['menu.name']
+                }
+            }
+
+
+            this.setState({
+                ...this.state,
+                ...defaultValues,
+                quantity: menuItem.quantity,
+            });
         }
+    }
+
+    onChange = (e) => {
+        this.setState({
+            ...this.state,
+            [e.target.name]: e.target.value
+        })
     }
 }
