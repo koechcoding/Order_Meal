@@ -109,7 +109,33 @@ class EditModal extends React.Component {
         })
     }
 
-    onEdit=()=>{
+    onEdit = () => {
         this.props.setLoading(true);
+        const { meal = {}, menu = {} } = this.state;
+        const menuItem = {
+            meal_id: meal.value ? meal.value : '',
+            menu_id: menu.value ? menu.value : '',
+            quantity: this.state.quantity,
+        };
+
+        axios.put(`/menu-items/${this.props.menuItem.id}`, menuItem).then(({ data }) => {
+            this.props.onChange();
+            this.setState({
+                ...this.state,
+                success: true,
+                error: null,
+            });
+            this.reset();
+            this.props.setLoading(false);
+            setTimeout(this.props.toggle, 1000);
+        }).catch(({ response }) => {
+            this.setState({
+                ...this.state,
+                error: response,
+                success: false,
+            });
+            this.reset();
+            this.props.setLoading(false);
+        });
     }
 }
