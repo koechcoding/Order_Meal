@@ -1,72 +1,200 @@
+
 import React from 'react';
-import { shallow }  from 'enzyme';
-import 'src/utils/bootTests'; 
-import Edit from './Edit';
-import Delete from './Delete';
-import MenuTypes from './MenuTypes';
-import Adapter from 'enzyme-adapter-react-16';
+import axios from 'src/axios';
+import PropTypes from 'prop-types';
+import { Alert, Button, Input } from 'reactstrap';
+import Modal from 'src/components/common/Modal';
+import DeleteModal from './Delete';
+import EditModal from './Edit';
+import { singleError } from 'src/utils';
 
-const props = { menu: {}, onChange: () => {}, isOpen: true, 
-                toggle: () => {}, setLoading: () => {}};
-describe('<MenuTypes />', () => {
-    it('renders correctly', () => {
-        const wrapper = shallow(<MenuTypes {...props}/>);
-        expect(wrapper).toMatchSnapshot();
-    });
-    it('resets on opened', () => {
-        const wrapper = shallow(<MenuTypes {...props}/>);
-        expect(wrapper).toMatchSnapshot();
-    });
-    it('toggles edit modal', () => {
-        const wrapper = shallow(<MenuTypes {...props}/>);
-        let prevState = wrapper.state('deleteIsOpen');
-        wrapper.instance().toggleDelete();
-        expect(wrapper.state('deleteIsOpen')).toBe(!prevState);
-    });
-    it('sets delete menu', () => {
-        const wrapper = shallow(<MenuTypes {...props}/>);
-        wrapper.instance().onDelete({ menu: 'Supper' });
-        expect(wrapper.state('toDelete')).toEqual({ menu: 'Supper' });
-    });
-    it('toggles edit modal', () => {
-        const wrapper = shallow(<MenuTypes {...props}/>);
-        let prevState = wrapper.state('editIsOpen');
-        wrapper.instance().toggleEdit();
-        expect(wrapper.state('editIsOpen')).toBe(!prevState);
-    });
-    it('sets edit menu', () => {
-        const wrapper = shallow(<MenuTypes {...props}/>);
-        wrapper.instance().onEdit({ menu: 'Supper' });
-        expect(wrapper.state('toEdit')).toEqual({ menu: 'Supper' });
-    });
-    it('records input changes', () => {
-        const wrapper = shallow(<MenuTypes {...props}/>);
-        wrapper.instance().onChange({target:{ name: 'name', value: 'value' }});
-        expect(wrapper.state('name')).toEqual('value');
-    });
-});
+class MenuTypes extends React.Component {
 
-describe('<Delete />', () => {
-    it('renders correctly', () => {
-        const wrapper = shallow(<Delete {...props}/>);
-        expect(wrapper).toMatchSnapshot();
-    });
-});
+    state = {
+        newName: '',
+        toEdit: {},
+        toDelete: {},
+        data: {
+            menus: []
+        },
+    }
 
-describe('<Edit />', () => {
-    it('renders correctly', () => {
-        const wrapper = shallow(<Edit {...props}/>);
-        expect(wrapper).toMatchSnapshot();
-    });
-    it('resets on opened', () => {
-        const wrapper = shallow(<Edit {...props}/>);
-        wrapper.setState({...wrapper.state(), error: 'error'});
-        wrapper.instance().onOpened();
-        expect(wrapper.state('error')).toBe(null);
-    });
-    it('records input changes', () => {
-        const wrapper = shallow(<Edit {...props}/>);
-        wrapper.instance().onChange({target:{ name: 'name', value: 'value' }});
-        expect(wrapper.state('name')).toEqual('value');
-    });
-});
+    componentWillMount() {
+        this.fetchMenuTypes();
+    }
+
+    fetchMenuTypes = () => {
+        this.props.setLoading(true);
+        axios.get('/menus?fields=name,id&per_page=1000').then(({ data }) => {
+            this.setState({
+                ...this.state,
+                data,
+            });
+            this.props.setLoading(false);
+        }).catch(({ response }) => {
+            this.setState({
+                ...this.state,
+                error: response,
+            });
+            this.props.setLoading(false);
+        })
+    }
+
+    onOpened = () => {
+        this.setState({
+            ...this.state,
+            error: null,
+        })
+    }
+
+    onDelete = (menu) => {
+        this.setState({
+            ...this.state,
+            deleteIsOpen: true,
+            toDelete: menu,
+        });
+    }
+    
+    onEdit = (menu) => {
+        this.setState({
+            ...this.state,
+            editIsOpen: true,
+            toEdit: menu,
+        });
+    }
+
+    toggleEdit = () => {
+        this.setState({
+            ...this.state,
+            editIsOpen: !this.state.editIsOpen
+        });
+    }
+
+    toggleDelete = () => {
+        this.setState({
+            ...this.state,
+            deleteIsOpen: !this.state.deleteIsOpen
+        });
+    }
+
+    onChange = (e) => {
+        this.setState({
+            ...this.state,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    onCreate = () => {
+        this.props.setLoading(true);
+        axios.post('/menus', { name: this.state.newName }).then(({ data }) => {
+            this.setState({
+                ...this.state,
+                error: null,
+                newName: ''
+            });
+            this.props.setLoading(false);
+            this.fetchMenuTypes();
+        }).catch(({ response }) => {
+            this.setState({
+                ...this.state,
+                error: response
+            });
+            this.props.setLoading(false);
+        })
+    }
+
+    render() {
+        const { data, error } = this.state;
+        const body = (
+            <div>
+                {error &&
+                    <Alert className="text-center text-small" color="danger">
+                        { singleError(error) }
+                    </Alert>
+                }
+                <div className="container m-0 p-0">
+                    <div className="row m-0 p-0">
+                        <div className="col-4 text-right pr-1">
+                            <label className="pt-2">Create New:</label>
+                        </div>
+                        <div className="col-4 pr-1 pl-0">
+                            <Input 
+                                name="newName"
+                                value={this.state.newName} 
+                                onChange={this.onChange} 
+                                placeholder="Name..." type="text" />
+                        </div>
+                        <div className="col-4 pl-0">
+                            <Button onClick={this.onCreate} color="secondary">Add</Button>
+                        </div>
+                    </div>
+                </div>
+                <div className="table-holder" style={{ maxHeight: '350px' }}>
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data.menus.map((menu) => (
+                                <tr key={menu.id}>
+                                    <td>{menu.id}</td>
+                                    <td>{menu.name}</td>
+                                    <td><button onClick={() => this.onEdit(menu)} className="edit-act">Edit</button></td>
+                                    <td><button onClick={() => this.onDelete(menu)} className="delete-act">Delete</button></td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        );
+
+        const { isOpen, toggle, } = this.props;
+        const { 
+            toEdit,
+            editIsOpen,
+            toDelete, 
+            deleteIsOpen 
+        } = this.state;
+        return (
+            <div>
+                <Modal 
+                    size="lg"
+                    title="Manage Menus" 
+                    body={body} 
+                    isOpen={isOpen}
+                    toggle={toggle}
+                    onOpened={this.onOpened}
+                />
+                <DeleteModal
+                    {...this.props}
+                    menu={toDelete}
+                    isOpen={deleteIsOpen}
+                    toggle={this.toggleDelete}
+                    onChange={this.fetchMenuTypes}
+                />
+                <EditModal
+                    {...this.props}
+                    menu={toEdit}
+                    isOpen={editIsOpen}
+                    toggle={this.toggleEdit}
+                    onChange={this.fetchMenuTypes}
+                />
+            </div>
+        );
+    }
+}
+
+MenuTypes.propTypes = {
+    setLoading: PropTypes.func.isRequired,
+    isOpen: PropTypes.bool.isRequired,
+    toggle: PropTypes.func.isRequired,
+}
+
+
+export default MenuTypes;
