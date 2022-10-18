@@ -190,6 +190,16 @@ class EditModal extends React.Component {
                toggle={toggle}
                onOpened={this.onOpened}
             />
-        )
+        );
     }
 }
+
+
+EditModal.propTypes = {
+    menuItem: PropTypes.object,
+    toggle: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
+    setLoading: PropTypes.func.isRequired,
+}
+
+export default EditModal;
