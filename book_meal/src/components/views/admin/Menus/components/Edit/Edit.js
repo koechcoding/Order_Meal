@@ -85,4 +85,31 @@ class EditModal extends React.Component {
             });
             callback(response, null);
         });
-    };
+    }
+
+    fetchMeals = (input, callback)=>{
+        axios.get('/meals?search=name:${input}&per_page=5').then(({ data}) =>{
+            const meals = data.meals.map((meal) => {
+                return { value: meal.id, label: meal.name }
+            });
+            callback(null, { options: male});
+        }).catch(({ response })=>{
+            this.setState({
+                ...this.state,
+                error: response,
+            });
+            callback(response, null);
+        });
+    }
+
+    setSelectedMenu= (meal) =>{
+        this.setState({
+            ...this.state,
+            meal
+        })
+    }
+
+    onEdit=()=>{
+        this.props.setLoading(true);
+    }
+}
