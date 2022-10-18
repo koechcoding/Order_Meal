@@ -1,0 +1,1171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Delete /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Delete
+    isOpen={true}
+    menu={Object {}}
+    onChange={[Function]}
+    setLoading={[Function]}
+    toggle={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "body": <div>
+        <p
+                className="text-center"
+        >
+                Delete this menu (
+                <b />
+                )?
+        </p>
+</div>,
+      "footer": <Button
+        className="m-auto"
+        color="danger"
+        onClick={[Function]}
+        tag="button"
+>
+        Delete
+</Button>,
+      "isOpen": true,
+      "menu": Object {},
+      "onChange": [Function],
+      "setLoading": [Function],
+      "title": "Delete Menu",
+      "toggle": [Function],
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "body": <div>
+          <p
+                    className="text-center"
+          >
+                    Delete this menu (
+                    <b />
+                    )?
+          </p>
+</div>,
+        "footer": <Button
+          className="m-auto"
+          color="danger"
+          onClick={[Function]}
+          tag="button"
+>
+          Delete
+</Button>,
+        "isOpen": true,
+        "menu": Object {},
+        "onChange": [Function],
+        "setLoading": [Function],
+        "title": "Delete Menu",
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<Edit /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Edit
+    isOpen={true}
+    menu={Object {}}
+    onChange={[Function]}
+    setLoading={[Function]}
+    toggle={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "body": <div>
+        <p>
+                <label>
+                        Name
+                </label>
+                <Input
+                        defaultValue={undefined}
+                        name="name"
+                        onChange={[Function]}
+                        type="text"
+                />
+        </p>
+</div>,
+      "footer": <Button
+        className="m-auto"
+        color="primary"
+        onClick={[Function]}
+        tag="button"
+>
+        Update
+</Button>,
+      "isOpen": true,
+      "menu": Object {},
+      "onChange": [Function],
+      "onOpened": [Function],
+      "setLoading": [Function],
+      "title": "Edit Menu",
+      "toggle": [Function],
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "body": <div>
+          <p>
+                    <label>
+                              Name
+                    </label>
+                    <Input
+                              defaultValue={undefined}
+                              name="name"
+                              onChange={[Function]}
+                              type="text"
+                    />
+          </p>
+</div>,
+        "footer": <Button
+          className="m-auto"
+          color="primary"
+          onClick={[Function]}
+          tag="button"
+>
+          Update
+</Button>,
+        "isOpen": true,
+        "menu": Object {},
+        "onChange": [Function],
+        "onOpened": [Function],
+        "setLoading": [Function],
+        "title": "Edit Menu",
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<MenuTypes /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MenuTypes
+    isOpen={true}
+    menu={Object {}}
+    onChange={[Function]}
+    setLoading={[Function]}
+    toggle={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Modal
+          body={
+                    <div>
+                              <div
+                                        className="container m-0 p-0"
+                              >
+                                        <div
+                                                  className="row m-0 p-0"
+                                        >
+                                                  <div
+                                                            className="col-4 text-right pr-1"
+                                                  >
+                                                            <label
+                                                                      className="pt-2"
+                                                            >
+                                                                      Create New:
+                                                            </label>
+                                                  </div>
+                                                  <div
+                                                            className="col-4 pr-1 pl-0"
+                                                  >
+                                                            <Input
+                                                                      name="newName"
+                                                                      onChange={[Function]}
+                                                                      placeholder="Name..."
+                                                                      type="text"
+                                                                      value=""
+                                                            />
+                                                  </div>
+                                                  <div
+                                                            className="col-4 pl-0"
+                                                  >
+                                                            <Button
+                                                                      color="secondary"
+                                                                      onClick={[Function]}
+                                                                      tag="button"
+                                                            >
+                                                                      Add
+                                                            </Button>
+                                                  </div>
+                                        </div>
+                              </div>
+                              <div
+                                        className="table-holder"
+                                        style={
+                                                  Object {
+                                                            "maxHeight": "350px",
+                                                          }
+                                        }
+                              >
+                                        <table
+                                                  className="table"
+                                        >
+                                                  <thead>
+                                                            <tr>
+                                                                      <th>
+                                                                                ID
+                                                                      </th>
+                                                                      <th>
+                                                                                Name
+                                                                      </th>
+                                                                      <th>
+                                                                                Edit
+                                                                      </th>
+                                                                      <th>
+                                                                                Delete
+                                                                      </th>
+                                                            </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                            
+                                                  </tbody>
+                                        </table>
+                              </div>
+                    </div>
+          }
+          isOpen={true}
+          onOpened={[Function]}
+          size="lg"
+          title="Manage Menus"
+          toggle={[Function]}
+/>,
+        <Delete
+          isOpen={undefined}
+          menu={Object {}}
+          onChange={[Function]}
+          setLoading={[Function]}
+          toggle={[Function]}
+/>,
+        <Edit
+          isOpen={undefined}
+          menu={Object {}}
+          onChange={[Function]}
+          setLoading={[Function]}
+          toggle={[Function]}
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "body": <div>
+            <div
+                        className="container m-0 p-0"
+            >
+                        <div
+                                    className="row m-0 p-0"
+                        >
+                                    <div
+                                                className="col-4 text-right pr-1"
+                                    >
+                                                <label
+                                                            className="pt-2"
+                                                >
+                                                            Create New:
+                                                </label>
+                                    </div>
+                                    <div
+                                                className="col-4 pr-1 pl-0"
+                                    >
+                                                <Input
+                                                            name="newName"
+                                                            onChange={[Function]}
+                                                            placeholder="Name..."
+                                                            type="text"
+                                                            value=""
+                                                />
+                                    </div>
+                                    <div
+                                                className="col-4 pl-0"
+                                    >
+                                                <Button
+                                                            color="secondary"
+                                                            onClick={[Function]}
+                                                            tag="button"
+                                                >
+                                                            Add
+                                                </Button>
+                                    </div>
+                        </div>
+            </div>
+            <div
+                        className="table-holder"
+                        style={
+                                    Object {
+                                                "maxHeight": "350px",
+                                              }
+                        }
+            >
+                        <table
+                                    className="table"
+                        >
+                                    <thead>
+                                                <tr>
+                                                            <th>
+                                                                        ID
+                                                            </th>
+                                                            <th>
+                                                                        Name
+                                                            </th>
+                                                            <th>
+                                                                        Edit
+                                                            </th>
+                                                            <th>
+                                                                        Delete
+                                                            </th>
+                                                </tr>
+                                    </thead>
+                                    <tbody>
+                                                
+                                    </tbody>
+                        </table>
+            </div>
+</div>,
+          "isOpen": true,
+          "onOpened": [Function],
+          "size": "lg",
+          "title": "Manage Menus",
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": undefined,
+          "menu": Object {},
+          "onChange": [Function],
+          "setLoading": [Function],
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": undefined,
+          "menu": Object {},
+          "onChange": [Function],
+          "setLoading": [Function],
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Modal
+            body={
+                        <div>
+                                    <div
+                                                className="container m-0 p-0"
+                                    >
+                                                <div
+                                                            className="row m-0 p-0"
+                                                >
+                                                            <div
+                                                                        className="col-4 text-right pr-1"
+                                                            >
+                                                                        <label
+                                                                                    className="pt-2"
+                                                                        >
+                                                                                    Create New:
+                                                                        </label>
+                                                            </div>
+                                                            <div
+                                                                        className="col-4 pr-1 pl-0"
+                                                            >
+                                                                        <Input
+                                                                                    name="newName"
+                                                                                    onChange={[Function]}
+                                                                                    placeholder="Name..."
+                                                                                    type="text"
+                                                                                    value=""
+                                                                        />
+                                                            </div>
+                                                            <div
+                                                                        className="col-4 pl-0"
+                                                            >
+                                                                        <Button
+                                                                                    color="secondary"
+                                                                                    onClick={[Function]}
+                                                                                    tag="button"
+                                                                        >
+                                                                                    Add
+                                                                        </Button>
+                                                            </div>
+                                                </div>
+                                    </div>
+                                    <div
+                                                className="table-holder"
+                                                style={
+                                                            Object {
+                                                                        "maxHeight": "350px",
+                                                                      }
+                                                }
+                                    >
+                                                <table
+                                                            className="table"
+                                                >
+                                                            <thead>
+                                                                        <tr>
+                                                                                    <th>
+                                                                                                ID
+                                                                                    </th>
+                                                                                    <th>
+                                                                                                Name
+                                                                                    </th>
+                                                                                    <th>
+                                                                                                Edit
+                                                                                    </th>
+                                                                                    <th>
+                                                                                                Delete
+                                                                                    </th>
+                                                                        </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                        
+                                                            </tbody>
+                                                </table>
+                                    </div>
+                        </div>
+            }
+            isOpen={true}
+            onOpened={[Function]}
+            size="lg"
+            title="Manage Menus"
+            toggle={[Function]}
+/>,
+          <Delete
+            isOpen={undefined}
+            menu={Object {}}
+            onChange={[Function]}
+            setLoading={[Function]}
+            toggle={[Function]}
+/>,
+          <Edit
+            isOpen={undefined}
+            menu={Object {}}
+            onChange={[Function]}
+            setLoading={[Function]}
+            toggle={[Function]}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "body": <div>
+              <div
+                            className="container m-0 p-0"
+              >
+                            <div
+                                          className="row m-0 p-0"
+                            >
+                                          <div
+                                                        className="col-4 text-right pr-1"
+                                          >
+                                                        <label
+                                                                      className="pt-2"
+                                                        >
+                                                                      Create New:
+                                                        </label>
+                                          </div>
+                                          <div
+                                                        className="col-4 pr-1 pl-0"
+                                          >
+                                                        <Input
+                                                                      name="newName"
+                                                                      onChange={[Function]}
+                                                                      placeholder="Name..."
+                                                                      type="text"
+                                                                      value=""
+                                                        />
+                                          </div>
+                                          <div
+                                                        className="col-4 pl-0"
+                                          >
+                                                        <Button
+                                                                      color="secondary"
+                                                                      onClick={[Function]}
+                                                                      tag="button"
+                                                        >
+                                                                      Add
+                                                        </Button>
+                                          </div>
+                            </div>
+              </div>
+              <div
+                            className="table-holder"
+                            style={
+                                          Object {
+                                                        "maxHeight": "350px",
+                                                      }
+                            }
+              >
+                            <table
+                                          className="table"
+                            >
+                                          <thead>
+                                                        <tr>
+                                                                      <th>
+                                                                                    ID
+                                                                      </th>
+                                                                      <th>
+                                                                                    Name
+                                                                      </th>
+                                                                      <th>
+                                                                                    Edit
+                                                                      </th>
+                                                                      <th>
+                                                                                    Delete
+                                                                      </th>
+                                                        </tr>
+                                          </thead>
+                                          <tbody>
+                                                        
+                                          </tbody>
+                            </table>
+              </div>
+</div>,
+            "isOpen": true,
+            "onOpened": [Function],
+            "size": "lg",
+            "title": "Manage Menus",
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": undefined,
+            "menu": Object {},
+            "onChange": [Function],
+            "setLoading": [Function],
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": undefined,
+            "menu": Object {},
+            "onChange": [Function],
+            "setLoading": [Function],
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<MenuTypes /> resets on opened 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MenuTypes
+    isOpen={true}
+    menu={Object {}}
+    onChange={[Function]}
+    setLoading={[Function]}
+    toggle={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Modal
+          body={
+                    <div>
+                              <div
+                                        className="container m-0 p-0"
+                              >
+                                        <div
+                                                  className="row m-0 p-0"
+                                        >
+                                                  <div
+                                                            className="col-4 text-right pr-1"
+                                                  >
+                                                            <label
+                                                                      className="pt-2"
+                                                            >
+                                                                      Create New:
+                                                            </label>
+                                                  </div>
+                                                  <div
+                                                            className="col-4 pr-1 pl-0"
+                                                  >
+                                                            <Input
+                                                                      name="newName"
+                                                                      onChange={[Function]}
+                                                                      placeholder="Name..."
+                                                                      type="text"
+                                                                      value=""
+                                                            />
+                                                  </div>
+                                                  <div
+                                                            className="col-4 pl-0"
+                                                  >
+                                                            <Button
+                                                                      color="secondary"
+                                                                      onClick={[Function]}
+                                                                      tag="button"
+                                                            >
+                                                                      Add
+                                                            </Button>
+                                                  </div>
+                                        </div>
+                              </div>
+                              <div
+                                        className="table-holder"
+                                        style={
+                                                  Object {
+                                                            "maxHeight": "350px",
+                                                          }
+                                        }
+                              >
+                                        <table
+                                                  className="table"
+                                        >
+                                                  <thead>
+                                                            <tr>
+                                                                      <th>
+                                                                                ID
+                                                                      </th>
+                                                                      <th>
+                                                                                Name
+                                                                      </th>
+                                                                      <th>
+                                                                                Edit
+                                                                      </th>
+                                                                      <th>
+                                                                                Delete
+                                                                      </th>
+                                                            </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                            
+                                                  </tbody>
+                                        </table>
+                              </div>
+                    </div>
+          }
+          isOpen={true}
+          onOpened={[Function]}
+          size="lg"
+          title="Manage Menus"
+          toggle={[Function]}
+/>,
+        <Delete
+          isOpen={undefined}
+          menu={Object {}}
+          onChange={[Function]}
+          setLoading={[Function]}
+          toggle={[Function]}
+/>,
+        <Edit
+          isOpen={undefined}
+          menu={Object {}}
+          onChange={[Function]}
+          setLoading={[Function]}
+          toggle={[Function]}
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "body": <div>
+            <div
+                        className="container m-0 p-0"
+            >
+                        <div
+                                    className="row m-0 p-0"
+                        >
+                                    <div
+                                                className="col-4 text-right pr-1"
+                                    >
+                                                <label
+                                                            className="pt-2"
+                                                >
+                                                            Create New:
+                                                </label>
+                                    </div>
+                                    <div
+                                                className="col-4 pr-1 pl-0"
+                                    >
+                                                <Input
+                                                            name="newName"
+                                                            onChange={[Function]}
+                                                            placeholder="Name..."
+                                                            type="text"
+                                                            value=""
+                                                />
+                                    </div>
+                                    <div
+                                                className="col-4 pl-0"
+                                    >
+                                                <Button
+                                                            color="secondary"
+                                                            onClick={[Function]}
+                                                            tag="button"
+                                                >
+                                                            Add
+                                                </Button>
+                                    </div>
+                        </div>
+            </div>
+            <div
+                        className="table-holder"
+                        style={
+                                    Object {
+                                                "maxHeight": "350px",
+                                              }
+                        }
+            >
+                        <table
+                                    className="table"
+                        >
+                                    <thead>
+                                                <tr>
+                                                            <th>
+                                                                        ID
+                                                            </th>
+                                                            <th>
+                                                                        Name
+                                                            </th>
+                                                            <th>
+                                                                        Edit
+                                                            </th>
+                                                            <th>
+                                                                        Delete
+                                                            </th>
+                                                </tr>
+                                    </thead>
+                                    <tbody>
+                                                
+                                    </tbody>
+                        </table>
+            </div>
+</div>,
+          "isOpen": true,
+          "onOpened": [Function],
+          "size": "lg",
+          "title": "Manage Menus",
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": undefined,
+          "menu": Object {},
+          "onChange": [Function],
+          "setLoading": [Function],
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": undefined,
+          "menu": Object {},
+          "onChange": [Function],
+          "setLoading": [Function],
+          "toggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Modal
+            body={
+                        <div>
+                                    <div
+                                                className="container m-0 p-0"
+                                    >
+                                                <div
+                                                            className="row m-0 p-0"
+                                                >
+                                                            <div
+                                                                        className="col-4 text-right pr-1"
+                                                            >
+                                                                        <label
+                                                                                    className="pt-2"
+                                                                        >
+                                                                                    Create New:
+                                                                        </label>
+                                                            </div>
+                                                            <div
+                                                                        className="col-4 pr-1 pl-0"
+                                                            >
+                                                                        <Input
+                                                                                    name="newName"
+                                                                                    onChange={[Function]}
+                                                                                    placeholder="Name..."
+                                                                                    type="text"
+                                                                                    value=""
+                                                                        />
+                                                            </div>
+                                                            <div
+                                                                        className="col-4 pl-0"
+                                                            >
+                                                                        <Button
+                                                                                    color="secondary"
+                                                                                    onClick={[Function]}
+                                                                                    tag="button"
+                                                                        >
+                                                                                    Add
+                                                                        </Button>
+                                                            </div>
+                                                </div>
+                                    </div>
+                                    <div
+                                                className="table-holder"
+                                                style={
+                                                            Object {
+                                                                        "maxHeight": "350px",
+                                                                      }
+                                                }
+                                    >
+                                                <table
+                                                            className="table"
+                                                >
+                                                            <thead>
+                                                                        <tr>
+                                                                                    <th>
+                                                                                                ID
+                                                                                    </th>
+                                                                                    <th>
+                                                                                                Name
+                                                                                    </th>
+                                                                                    <th>
+                                                                                                Edit
+                                                                                    </th>
+                                                                                    <th>
+                                                                                                Delete
+                                                                                    </th>
+                                                                        </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                        
+                                                            </tbody>
+                                                </table>
+                                    </div>
+                        </div>
+            }
+            isOpen={true}
+            onOpened={[Function]}
+            size="lg"
+            title="Manage Menus"
+            toggle={[Function]}
+/>,
+          <Delete
+            isOpen={undefined}
+            menu={Object {}}
+            onChange={[Function]}
+            setLoading={[Function]}
+            toggle={[Function]}
+/>,
+          <Edit
+            isOpen={undefined}
+            menu={Object {}}
+            onChange={[Function]}
+            setLoading={[Function]}
+            toggle={[Function]}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "body": <div>
+              <div
+                            className="container m-0 p-0"
+              >
+                            <div
+                                          className="row m-0 p-0"
+                            >
+                                          <div
+                                                        className="col-4 text-right pr-1"
+                                          >
+                                                        <label
+                                                                      className="pt-2"
+                                                        >
+                                                                      Create New:
+                                                        </label>
+                                          </div>
+                                          <div
+                                                        className="col-4 pr-1 pl-0"
+                                          >
+                                                        <Input
+                                                                      name="newName"
+                                                                      onChange={[Function]}
+                                                                      placeholder="Name..."
+                                                                      type="text"
+                                                                      value=""
+                                                        />
+                                          </div>
+                                          <div
+                                                        className="col-4 pl-0"
+                                          >
+                                                        <Button
+                                                                      color="secondary"
+                                                                      onClick={[Function]}
+                                                                      tag="button"
+                                                        >
+                                                                      Add
+                                                        </Button>
+                                          </div>
+                            </div>
+              </div>
+              <div
+                            className="table-holder"
+                            style={
+                                          Object {
+                                                        "maxHeight": "350px",
+                                                      }
+                            }
+              >
+                            <table
+                                          className="table"
+                            >
+                                          <thead>
+                                                        <tr>
+                                                                      <th>
+                                                                                    ID
+                                                                      </th>
+                                                                      <th>
+                                                                                    Name
+                                                                      </th>
+                                                                      <th>
+                                                                                    Edit
+                                                                      </th>
+                                                                      <th>
+                                                                                    Delete
+                                                                      </th>
+                                                        </tr>
+                                          </thead>
+                                          <tbody>
+                                                        
+                                          </tbody>
+                            </table>
+              </div>
+</div>,
+            "isOpen": true,
+            "onOpened": [Function],
+            "size": "lg",
+            "title": "Manage Menus",
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": undefined,
+            "menu": Object {},
+            "onChange": [Function],
+            "setLoading": [Function],
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": undefined,
+            "menu": Object {},
+            "onChange": [Function],
+            "setLoading": [Function],
+            "toggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
