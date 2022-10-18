@@ -46,5 +46,27 @@ class Delete extends React.Component {
                 </p>
             </div>
         );
+        const footer = (
+            <Button color="danger" className="m-auto" onClick={this.onDelete}>Delete</Button>
+        );
+
+        return(
+            <Modal
+            {...this.props}
+            title="Delete Menu"
+            body={body}
+            footer={footer}
+            toggle={this.props.toggle}
+        />
+        );
     }
 }
+
+Delete.propTypes = {
+    toggle: PropTypes.func.isRequired,
+    setLoading: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
+    menu: PropTypes.object.isRequired
+}
+
+export default Delete;
