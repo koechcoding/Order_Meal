@@ -1,0 +1,11 @@
+.Select-control:active,
+.Select-control:focus,
+.Select-control {
+  border-radius: 0;
+  background-color: #f4f1d6;
+  outline: none; 
+}
+
+.Select-placeholder {
+  color: #666; 
+}
