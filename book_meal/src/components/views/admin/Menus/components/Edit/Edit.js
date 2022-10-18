@@ -138,4 +138,12 @@ class EditModal extends React.Component {
             this.props.setLoading(false);
         });
     }
+
+    render(){
+        const {isOpen, toggle } = this.props;
+        const { error, success, meal, menu} = this.state;
+        const body =(
+            
+        )
+    }
 }
