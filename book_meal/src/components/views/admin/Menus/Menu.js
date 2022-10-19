@@ -93,6 +93,14 @@ class Menus extends React.Component {
             menuTypesIsOpen: !this.state.menuTypesIsOpen
         });
     }
+    toggleManage = (e) => {
+        if (this.bubbleBlocked) 
+            return;
+        this.setState({
+            ...this.state,
+            manageIsOpen: !this.state.manageIsOpen,
+        });
+    }
 
 
 }
