@@ -24,6 +24,11 @@ class MenuItemsTable extends React.Component {
         };
         const pageInfo = paginationInfo(this.props.data);
         const { toggleEdit, toggleDelete } = this.props;
-        return()
+        return(
+            <div>
+                <Table data ={tableData} onedit={toggleEdit} ondelete={toggleDelete} />
+                
+            </div>
+        )
     }
 }
