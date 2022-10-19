@@ -18,12 +18,11 @@ import './styles.css';
 
 import { singleError, paginationInfo } from 'src/utils';
 
-
 class Menus extends React.Component {
 
     bubbleBlocked = false;
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             page: 1,
@@ -37,6 +36,7 @@ class Menus extends React.Component {
             toEdit: {}
         }
     }
+
     componentWillMount() {
         this.fetchMenus()
     }
@@ -85,6 +85,7 @@ class Menus extends React.Component {
         }, 500);
 
     }
+
     toggleMenuTypes = (e) => {
         this.blockBubbling();
         this.setState({
@@ -93,6 +94,7 @@ class Menus extends React.Component {
             menuTypesIsOpen: !this.state.menuTypesIsOpen
         });
     }
+
     toggleManage = (e) => {
         if (this.bubbleBlocked) 
             return;
@@ -101,15 +103,7 @@ class Menus extends React.Component {
             manageIsOpen: !this.state.manageIsOpen,
         });
     }
-    toggleManage = (e) => {
-        if (this.bubbleBlocked) 
-            return;
-        this.setState({
-            ...this.state,
-            manageIsOpen: !this.state.manageIsOpen,
-        });
-    }
-     
+    
     toggleCreate = (e) => {
         this.blockBubbling();
         this.setState({
@@ -118,6 +112,7 @@ class Menus extends React.Component {
             createIsOpen: !this.state.createIsOpen,
         });
     }
+
     toggleEdit = (menuItem) => {
         this.setState({
             ...this.state,
@@ -188,6 +183,52 @@ class Menus extends React.Component {
             <Filter onFilter={this.onFilter} />
         );
 
+        return (
+            <Content 
+                {...this.props}
+                contentTop={contentTop} 
+                contentFilter={contentFilter}>
+            
+                    { error && <Alert color="danger"> { singleError(error) }</Alert> }
+                     <MenusTable 
+                         data={data}
+                         pageInfo={pageInfo}
+                         onPrev={this.onPageChange}
+                         onNext={this.onPageChange}
+                         toggleEdit={this.toggleEdit} 
+                         toggleDelete={this.toggleDelete} />
 
+                    <CreateModal 
+                        {...this.props}
+                        onChange={this.fetchMenus}
+                        isOpen={createIsOpen} 
+                        toggle={this.toggleCreate} />
 
+                    <EditModal 
+                        {...this.props}
+                        menuItem={toEdit} 
+                        onChange={this.fetchMenus}
+                        isOpen={editIsOpen} 
+                        toggle={this.toggleEdit}/>
+
+                    <DeleteModal 
+                        {...this.props}
+                        menuItem={toDelete} 
+                        onChange={this.fetchMenus}
+                        isOpen={deleteIsOpen} 
+                        toggle={this.toggleDelete}/>
+
+                    <MenuTypes
+                        {...this.props}
+                        isOpen={menuTypesIsOpen}
+                        toggle={this.toggleMenuTypes}/>
+            </Content>
+        );
+    }
 }
+
+Menus.propTypes = {
+    setLoading: PropTypes.func.isRequired
+}
+
+export default Menus;
