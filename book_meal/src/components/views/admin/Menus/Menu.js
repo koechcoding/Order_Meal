@@ -134,5 +134,13 @@ class Menus extends React.Component {
         });
     }
 
+    onFilter = (text) => {
+        this.setState({
+            ...this.state,
+            search: text,
+        });
+        this.fetchMenus({search: text});
+    }
+
 
 }
