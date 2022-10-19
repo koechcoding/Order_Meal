@@ -109,6 +109,15 @@ class Menus extends React.Component {
             manageIsOpen: !this.state.manageIsOpen,
         });
     }
+     
+    toggleCreate = (e) => {
+        this.blockBubbling();
+        this.setState({
+            ...this.state,
+            manageIsOpen: false,
+            createIsOpen: !this.state.createIsOpen,
+        });
+    }
 
 
 }
