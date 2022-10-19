@@ -142,5 +142,18 @@ class Menus extends React.Component {
         this.fetchMenus({search: text});
     }
 
+    onPageChange = (page) => {
+        this.setState({
+            ...this.state,
+            page,
+        });
+
+        this.fetchMenus({
+            page: page,
+            search: this.state.search
+        });
+    }
+
+
 
 }
