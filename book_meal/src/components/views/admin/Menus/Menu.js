@@ -73,4 +73,17 @@ class Menus extends React.Component {
             this.props.setLoading(false);
         })
     }
+
+    blockBubbling = () => {
+        /** 
+         * workaround e.stopPropagation()
+         * @see https://github.com/facebook/react/issues/1691
+         */
+        this.bubbleBlocked = true;
+        setTimeout(() => {
+            this.bubbleBlocked = false;
+        }, 500);
+
+    }
+
 }
