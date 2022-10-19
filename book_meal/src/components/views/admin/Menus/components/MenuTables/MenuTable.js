@@ -27,8 +27,14 @@ class MenuItemsTable extends React.Component {
         return(
             <div>
                 <Table data ={tableData} onedit={toggleEdit} ondelete={toggleDelete} />
-                
+                <Paginator {...this.props} pageInfo={pageInfo} />
             </div>
-        )
+        );
     }
 }
+
+MenuItemsTable.propTypes ={
+    data: PropTypes.object.isRequired,
+}
+
+export default MenuItemsTable;
