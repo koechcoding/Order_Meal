@@ -184,6 +184,10 @@ class Menus extends React.Component {
             </div>
         );
 
+        const contentFilter = (
+            <Filter onFilter={this.onFilter} />
+        );
+
 
 
 }
