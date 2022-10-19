@@ -118,6 +118,13 @@ class Menus extends React.Component {
             createIsOpen: !this.state.createIsOpen,
         });
     }
+    toggleEdit = (menuItem) => {
+        this.setState({
+            ...this.state,
+            toEdit: menuItem || {},
+            editIsOpen: !this.state.editIsOpen
+        });
+    }
 
 
 }
