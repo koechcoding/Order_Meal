@@ -154,6 +154,20 @@ class Menus extends React.Component {
         });
     }
 
+    render() {
+        const { 
+            data,
+            error,
+            pageInfo,
+            toEdit,
+            editIsOpen,
+            createIsOpen,
+            toDelete,
+            deleteIsOpen,
+            manageIsOpen,
+            menuTypesIsOpen,
+        } = this.state;
+
 
 
 }
