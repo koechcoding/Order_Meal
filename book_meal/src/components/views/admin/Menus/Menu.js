@@ -168,6 +168,22 @@ class Menus extends React.Component {
             menuTypesIsOpen,
         } = this.state;
 
+        const contentTop = (
+            <div className="col-12 mb-2 pr-0 pr-sm-2">
+                <h5 className="d-inline-block">Today's Menu</h5>
+                <ButtonDropdown className="float-right" isOpen={manageIsOpen} toggle={this.toggleManage}>
+                    <DropdownToggle className="btn-secondary" caret>
+                        Manage
+                    </DropdownToggle>
+                    <DropdownMenu>
+                        <DropdownItem onClick={this.toggleMenuTypes}>Manage Menus</DropdownItem>
+                        <DropdownItem onClick={this.toggleCreate}>Add Meal To Menu</DropdownItem>
+                    </DropdownMenu>
+                </ButtonDropdown>
+
+            </div>
+        );
+
 
 
 }
