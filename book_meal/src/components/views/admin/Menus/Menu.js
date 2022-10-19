@@ -126,5 +126,13 @@ class Menus extends React.Component {
         });
     }
 
+    toggleDelete = (menuItem) => {
+        this.setState({
+            ...this.state,
+            toDelete: menuItem || {},
+            deleteIsOpen: !this.state.deleteIsOpen
+        });
+    }
+
 
 }
