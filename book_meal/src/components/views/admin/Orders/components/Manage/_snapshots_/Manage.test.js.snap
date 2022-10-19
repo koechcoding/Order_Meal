@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Manage /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Manage
+    isOpen={false}
+    onChange={[Function]}
+    order={Object {}}
+    setLoading={[Function]}
+    toggle={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "body": <div>
+        <p
+                className="text-center"
+        >
+                Accept or reject this order(ID: 
+                <b />
+                )
+        </p>
+</div>,
+      "footer": <div
+        className="m-auto"
+>
+        <Button
+                className="mr-2"
+                color="danger"
+                onClick={[Function]}
+                tag="button"
+        >
+                Reject
+        </Button>
+        <Button
+                color="primary"
+                onClick={[Function]}
+                tag="button"
+        >
+                Accept
+        </Button>
+</div>,
+      "isOpen": false,
+      "onOpened": [Function],
+      "title": "Manage Order Status",
+      "toggle": [Function],
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "body": <div>
+          <p
+                    className="text-center"
+          >
+                    Accept or reject this order(ID: 
+                    <b />
+                    )
+          </p>
+</div>,
+        "footer": <div
+          className="m-auto"
+>
+          <Button
+                    className="mr-2"
+                    color="danger"
+                    onClick={[Function]}
+                    tag="button"
+          >
+                    Reject
+          </Button>
+          <Button
+                    color="primary"
+                    onClick={[Function]}
+                    tag="button"
+          >
+                    Accept
+          </Button>
+</div>,
+        "isOpen": false,
+        "onOpened": [Function],
+        "title": "Manage Order Status",
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
