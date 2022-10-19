@@ -85,5 +85,14 @@ class Menus extends React.Component {
         }, 500);
 
     }
+    toggleMenuTypes = (e) => {
+        this.blockBubbling();
+        this.setState({
+            ...this.state,
+            manageIsOpen: false,
+            menuTypesIsOpen: !this.state.menuTypesIsOpen
+        });
+    }
+
 
 }
