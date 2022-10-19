@@ -7,5 +7,20 @@ import Table from 'src/components/common/Table';
 import { EntryType } from 'src/constants';
 
 class MenuItemsTable extends React.Component {
-    
+
+    render(){
+        const { menu_items = []} = this.props.data;
+        let rows = menu_item.map((row)=> flattenObject(row));
+        const tableData = {
+            columns: [
+                { key: 'id', title: 'ID', type: EntryType.NUMBER },
+                { key: 'meal.img_url', title: 'Meal Image', type: EntryType.IMAGE },
+                { key: 'meal.name', title: 'Meal Name', type: EntryType.TEXT },
+                { key: 'quantity', title: 'Quantity', type: EntryType.NUMBER },
+                { key: 'menu.name', title: 'Menu', type: EntryType.TEXT },
+                { key: 'created_at', title: 'Created On', type: EntryType.DATE } 
+            ],
+            rows,
+        }
+    }
 }
