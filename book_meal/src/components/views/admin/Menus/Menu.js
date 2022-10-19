@@ -17,3 +17,27 @@ import axios from 'src/axios';
 import './styles.css';
 
 import { singleError, paginationInfo } from 'src/utils';
+
+
+class Menus extends React.Component {
+
+    bubbleBlocked = false;
+
+    constructor(props){
+        super(props);
+        this.state = {
+            page: 1,
+            data: {},
+            search: '',
+            perPage: 5,
+            deleteIsOpen: false,
+            editIsOpen: false,
+            menuTypesIsOpen: false,
+            toDelete: {},
+            toEdit: {}
+        }
+    }
+    componentWillMount() {
+        this.fetchMenus()
+    }
+}
