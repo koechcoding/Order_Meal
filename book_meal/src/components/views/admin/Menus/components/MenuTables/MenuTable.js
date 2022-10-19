@@ -21,6 +21,9 @@ class MenuItemsTable extends React.Component {
                 { key: 'created_at', title: 'Created On', type: EntryType.DATE } 
             ],
             rows,
-        }
+        };
+        const pageInfo = paginationInfo(this.props.data);
+        const { toggleEdit, toggleDelete } = this.props;
+        return()
     }
 }
