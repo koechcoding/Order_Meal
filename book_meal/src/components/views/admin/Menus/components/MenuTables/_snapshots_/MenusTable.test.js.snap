@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenusTable /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MenuItemsTable
+    data={
+        Object {
+            "created_at": "",
+            "id": 1,
+            "meal": Object {
+              "img_url": "http://localhost/#",
+              "name": "Ugali",
+            },
+            "menu": Object {
+              "name": "Supper",
+            },
+            "quantity": 20,
+          }
+    }
+    onDelete={[Function]}
+    onEdit={[Function]}
+    onNext={[Function]}
+    onPrev={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Table
+          data={
+                    Object {
+                              "columns": Array [
+                                Object {
+                                  "key": "id",
+                                  "title": "ID",
+                                  "type": 1,
+                                },
+                                Object {
+                                  "key": "meal.img_url",
+                                  "title": "Meal Image",
+                                  "type": 2,
+                                },
+                                Object {
+                                  "key": "meal.name",
+                                  "title": "Meal Name",
+                                  "type": 0,
+                                },
+                                Object {
+                                  "key": "quantity",
+                                  "title": "Quantity",
+                                  "type": 1,
+                                },
+                                Object {
+                                  "key": "menu.name",
+                                  "title": "Menu",
+                                  "type": 0,
+                                },
+                                Object {
+                                  "key": "created_at",
+                                  "title": "Created On",
+                                  "type": 3,
+                                },
+                              ],
+                              "rows": Array [],
+                            }
+          }
+          onDelete={undefined}
+          onEdit={undefined}
+/>,
+        <Paginator
+          data={
+                    Object {
+                              "created_at": "",
+                              "id": 1,
+                              "meal": Object {
+                                "img_url": "http://localhost/#",
+                                "name": "Ugali",
+                              },
+                              "menu": Object {
+                                "name": "Supper",
+                              },
+                              "quantity": 20,
+                            }
+          }
+          onDelete={[Function]}
+          onEdit={[Function]}
+          onNext={[Function]}
+          onPrev={[Function]}
+          pageInfo={
+                    Object {
+                              "currentCount": undefined,
+                              "currentPage": 1,
+                              "hasNext": undefined,
+                              "hasPrev": undefined,
+                              "nextPage": undefined,
+                              "pageCount": 1,
+                              "perPage": undefined,
+                              "prevPage": undefined,
+                              "total": undefined,
+                            }
+          }
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "data": Object {
+            "columns": Array [
+              Object {
+                "key": "id",
+                "title": "ID",
+                "type": 1,
+              },
+              Object {
+                "key": "meal.img_url",
+                "title": "Meal Image",
+                "type": 2,
+              },
+              Object {
+                "key": "meal.name",
+                "title": "Meal Name",
+                "type": 0,
+              },
+              Object {
+                "key": "quantity",
+                "title": "Quantity",
+                "type": 1,
+              },
+              Object {
+                "key": "menu.name",
+                "title": "Menu",
+                "type": 0,
+              },
+              Object {
+                "key": "created_at",
+                "title": "Created On",
+                "type": 3,
+              },
+            ],
+            "rows": Array [],
+          },
+          "onDelete": undefined,
+          "onEdit": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "data": Object {
+            "created_at": "",
+            "id": 1,
+            "meal": Object {
+              "img_url": "http://localhost/#",
+              "name": "Ugali",
+            },
+            "menu": Object {
+              "name": "Supper",
+            },
+            "quantity": 20,
+          },
+          "onDelete": [Function],
+          "onEdit": [Function],
+          "onNext": [Function],
+          "onPrev": [Function],
+          "pageInfo": Object {
+            "currentCount": undefined,
+            "currentPage": 1,
+            "hasNext": undefined,
+            "hasPrev": undefined,
+            "nextPage": undefined,
+            "pageCount": 1,
+            "perPage": undefined,
+            "prevPage": undefined,
+            "total": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Table
+            data={
+                        Object {
+                                    "columns": Array [
+                                      Object {
+                                        "key": "id",
+                                        "title": "ID",
+                                        "type": 1,
+                                      },
+                                      Object {
+                                        "key": "meal.img_url",
+                                        "title": "Meal Image",
+                                        "type": 2,
+                                      },
+                                      Object {
+                                        "key": "meal.name",
+                                        "title": "Meal Name",
+                                        "type": 0,
+                                      },
+                                      Object {
+                                        "key": "quantity",
+                                        "title": "Quantity",
+                                        "type": 1,
+                                      },
+                                      Object {
+                                        "key": "menu.name",
+                                        "title": "Menu",
+                                        "type": 0,
+                                      },
+                                      Object {
+                                        "key": "created_at",
+                                        "title": "Created On",
+                                        "type": 3,
+                                      },
+                                    ],
+                                    "rows": Array [],
+                                  }
+            }
+            onDelete={undefined}
+            onEdit={undefined}
+/>,
+          <Paginator
+            data={
+                        Object {
+                                    "created_at": "",
+                                    "id": 1,
+                                    "meal": Object {
+                                      "img_url": "http://localhost/#",
+                                      "name": "Ugali",
+                                    },
+                                    "menu": Object {
+                                      "name": "Supper",
+                                    },
+                                    "quantity": 20,
+                                  }
+            }
+            onDelete={[Function]}
+            onEdit={[Function]}
+            onNext={[Function]}
+            onPrev={[Function]}
+            pageInfo={
+                        Object {
+                                    "currentCount": undefined,
+                                    "currentPage": 1,
+                                    "hasNext": undefined,
+                                    "hasPrev": undefined,
+                                    "nextPage": undefined,
+                                    "pageCount": 1,
+                                    "perPage": undefined,
+                                    "prevPage": undefined,
+                                    "total": undefined,
+                                  }
+            }
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "data": Object {
+              "columns": Array [
+                Object {
+                  "key": "id",
+                  "title": "ID",
+                  "type": 1,
+                },
+                Object {
+                  "key": "meal.img_url",
+                  "title": "Meal Image",
+                  "type": 2,
+                },
+                Object {
+                  "key": "meal.name",
+                  "title": "Meal Name",
+                  "type": 0,
+                },
+                Object {
+                  "key": "quantity",
+                  "title": "Quantity",
+                  "type": 1,
+                },
+                Object {
+                  "key": "menu.name",
+                  "title": "Menu",
+                  "type": 0,
+                },
+                Object {
+                  "key": "created_at",
+                  "title": "Created On",
+                  "type": 3,
+                },
+              ],
+              "rows": Array [],
+            },
+            "onDelete": undefined,
+            "onEdit": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "data": Object {
+              "created_at": "",
+              "id": 1,
+              "meal": Object {
+                "img_url": "http://localhost/#",
+                "name": "Ugali",
+              },
+              "menu": Object {
+                "name": "Supper",
+              },
+              "quantity": 20,
+            },
+            "onDelete": [Function],
+            "onEdit": [Function],
+            "onNext": [Function],
+            "onPrev": [Function],
+            "pageInfo": Object {
+              "currentCount": undefined,
+              "currentPage": 1,
+              "hasNext": undefined,
+              "hasPrev": undefined,
+              "nextPage": undefined,
+              "pageCount": 1,
+              "perPage": undefined,
+              "prevPage": undefined,
+              "total": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
