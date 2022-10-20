@@ -109,4 +109,28 @@ class Orders extends React.Component {
             <Filter onFilter={this.onFilter} />
         );
 
+        return (
+            <Content 
+                {...this.props}
+                contentTop={contentTop} 
+                contentFilter={contentFilter}>
+            
+                { error && <Alert color="danger"> { singleError(error) }</Alert> }
+                     <OrdersTable 
+                         data={data}
+                         pageInfo={pageInfo}
+                         onPrev={this.onPageChange}
+                         onToggle={this.onToggle}
+                         onNext={this.onPageChange} />
+
+                    <ManageModal 
+                        {...this.props}
+                        order={toManage} 
+                        onChange={this.fetchOrders}
+                        isOpen={manageIsOpen} 
+                        toggle={this.toggleManage}/>
+            </Content>
+        );
+    }
+
 }
