@@ -9,9 +9,9 @@ import { singleError, paginationInfo } from 'src/utils';
 
 class Orders extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             page: 1,
             data: {},
             search: '',
@@ -20,6 +20,7 @@ class Orders extends React.Component {
             toManage: {},
         }
     }
+
     componentWillMount() {
         this.fetchOrders()
     }
@@ -56,6 +57,7 @@ class Orders extends React.Component {
             this.props.setLoading(false);
         })
     }
+
     toggleManage = () => {
         this.setState({
             ...this.state,
@@ -70,6 +72,7 @@ class Orders extends React.Component {
         });
         this.fetchOrders({search: text});
     }
+
     onToggle = (order) => {
         this.setState({
             ...this.state,
@@ -89,6 +92,7 @@ class Orders extends React.Component {
             search: this.state.search
         });
     }
+
     render() {
         const { 
             data,
@@ -132,5 +136,6 @@ class Orders extends React.Component {
             </Content>
         );
     }
-
 }
+
+export default Orders;
