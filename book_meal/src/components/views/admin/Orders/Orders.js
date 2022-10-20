@@ -70,5 +70,12 @@ class Orders extends React.Component {
         });
         this.fetchOrders({search: text});
     }
+    onToggle = (order) => {
+        this.setState({
+            ...this.state,
+            manageIsOpen: true,
+            toManage: order,
+        });
+    }
 
 }
