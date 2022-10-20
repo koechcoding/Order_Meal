@@ -23,4 +23,37 @@ class Orders extends React.Component {
     componentWillMount() {
         this.fetchOrders()
     }
+
+    fetchOrders = (config = {}) => {
+        let { 
+            page = this.state.page, 
+            perPage = this.state.perPage,
+            search = this.state.search, 
+        } = config;
+        const link = 
+            `/orders?related=menu_item|user&page=${page}&search=${search}&per_page=${perPage}&time=today`;
+        this.props.setLoading(true);
+
+        axios.auth();
+        axios.get(link, this.state).then(({ data }) => {
+            const pageInfo = paginationInfo(data);
+            this.setState({
+                ...this.state,
+                page: pageInfo.currentPage,
+                data,
+            });
+            this.props.setLoading(false);
+            if (pageInfo.currentCount === 0 && pageInfo.currentPage !== 1) {
+                this.fetchOrders({
+                    page: pageInfo.currentPage - 1
+                });
+            }
+        }).catch(({ response }) => {
+            this.setState({
+                ...this.state,
+                error: response,
+            })
+            this.props.setLoading(false);
+        })
+    }
 }
