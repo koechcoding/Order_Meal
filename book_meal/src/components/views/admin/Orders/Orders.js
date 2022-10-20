@@ -62,4 +62,13 @@ class Orders extends React.Component {
             manageIsOpen: !this.state.manageIsOpen
         });
     }
+
+    onFilter = (text) => {
+        this.setState({
+            ...this.state,
+            search: text,
+        });
+        this.fetchOrders({search: text});
+    }
+
 }
