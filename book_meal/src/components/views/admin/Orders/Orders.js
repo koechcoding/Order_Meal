@@ -89,5 +89,24 @@ class Orders extends React.Component {
             search: this.state.search
         });
     }
+    render() {
+        const { 
+            data,
+            error,
+            pageInfo,
+            toManage,
+            manageIsOpen
+        } = this.state;
+
+
+        const contentTop = (
+            <div className="col-12 mb-2 pr-0 pr-sm-2">
+                <h5 className="d-inline-block">Manage Orders</h5>
+            </div>
+        );
+
+        const contentFilter = (
+            <Filter onFilter={this.onFilter} />
+        );
 
 }
