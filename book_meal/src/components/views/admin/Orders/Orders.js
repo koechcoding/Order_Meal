@@ -78,4 +78,16 @@ class Orders extends React.Component {
         });
     }
 
+    onPageChange = (page) => {
+        this.setState({
+            ...this.state,
+            page,
+        });
+
+        this.fetchOrders({
+            page: page,
+            search: this.state.search
+        });
+    }
+
 }
