@@ -56,4 +56,10 @@ class Orders extends React.Component {
             this.props.setLoading(false);
         })
     }
+    toggleManage = () => {
+        this.setState({
+            ...this.state,
+            manageIsOpen: !this.state.manageIsOpen
+        });
+    }
 }
