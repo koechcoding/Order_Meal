@@ -36,3 +36,8 @@ class OrdersTable extends React.Component {
 }
 
 OrdersTable.propTypes = {
+    data: PropTypes.object.isRequired,
+    onToggle: PropTypes.func.isRequired,
+}
+
+export default OrdersTable;
