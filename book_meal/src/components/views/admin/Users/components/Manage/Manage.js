@@ -46,4 +46,18 @@ class ManageModal extends React.Component {
             this.props.setLoading(false);
         });
     }
+    render(){
+        const { error} = this.state;
+        const { user ={}} = this.props;
+        const body = (
+            <div>
+                {error &&
+                   <Alert classname="text-center text-small" color="danger">
+                      { singleError( error)}
+                   </Alert>
+                }
+                
+            </div>
+        ) 
+    }
 }
