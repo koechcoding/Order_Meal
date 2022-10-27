@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UsersTable /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UsersTable
+    data={
+        Object {
+            "users": Array [
+              Object {
+                "created_at": "10-08-2018",
+                "email": "mail@test.com",
+                "id": 1,
+                "role": 1,
+                "username": "edward",
+              },
+            ],
+          }
+    }
+    onDelete={[Function]}
+    onEdit={[Function]}
+    onNext={[Function]}
+    onPrev={[Function]}
+    onToggle={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Table
+          data={
+                    Object {
+                              "columns": Array [
+                                Object {
+                                  "key": "id",
+                                  "title": "ID",
+                                  "type": 1,
+                                },
+                                Object {
+                                  "key": "email",
+                                  "title": "Email",
+                                  "type": 0,
+                                },
+                                Object {
+                                  "key": "username",
+                                  "title": "Name",
+                                  "type": 0,
+                                },
+                                Object {
+                                  "key": "created_at",
+                                  "title": "Created On",
+                                  "type": 3,
+                                },
+                                Object {
+                                  "key": "role",
+                                  "title": "Role",
+                                  "type": 5,
+                                },
+                              ],
+                              "rows": Array [
+                                Object {
+                                  "created_at": "10-08-2018",
+                                  "email": "mail@test.com",
+                                  "id": 1,
+                                  "role": 1,
+                                  "username": "edward",
+                                },
+                              ],
+                            }
+          }
+          onToggle={[Function]}
+/>,
+        <Paginator
+          data={
+                    Object {
+                              "users": Array [
+                                Object {
+                                  "created_at": "10-08-2018",
+                                  "email": "mail@test.com",
+                                  "id": 1,
+                                  "role": 1,
+                                  "username": "edward",
+                                },
+                              ],
+                            }
+          }
+          onDelete={[Function]}
+          onEdit={[Function]}
+          onNext={[Function]}
+          onPrev={[Function]}
+          onToggle={[Function]}
+          pageInfo={
+                    Object {
+                              "currentCount": undefined,
+                              "currentPage": 1,
+                              "hasNext": undefined,
+                              "hasPrev": undefined,
+                              "nextPage": undefined,
+                              "pageCount": 1,
+                              "perPage": undefined,
+                              "prevPage": undefined,
+                              "total": undefined,
+                            }
+          }
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "data": Object {
+            "columns": Array [
+              Object {
+                "key": "id",
+                "title": "ID",
+                "type": 1,
+              },
+              Object {
+                "key": "email",
+                "title": "Email",
+                "type": 0,
+              },
+              Object {
+                "key": "username",
+                "title": "Name",
+                "type": 0,
+              },
+              Object {
+                "key": "created_at",
+                "title": "Created On",
+                "type": 3,
+              },
+              Object {
+                "key": "role",
+                "title": "Role",
+                "type": 5,
+              },
+            ],
+            "rows": Array [
+              Object {
+                "created_at": "10-08-2018",
+                "email": "mail@test.com",
+                "id": 1,
+                "role": 1,
+                "username": "edward",
+              },
+            ],
+          },
+          "onToggle": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "data": Object {
+            "users": Array [
+              Object {
+                "created_at": "10-08-2018",
+                "email": "mail@test.com",
+                "id": 1,
+                "role": 1,
+                "username": "edward",
+              },
+            ],
+          },
+          "onDelete": [Function],
+          "onEdit": [Function],
+          "onNext": [Function],
+          "onPrev": [Function],
+          "onToggle": [Function],
+          "pageInfo": Object {
+            "currentCount": undefined,
+            "currentPage": 1,
+            "hasNext": undefined,
+            "hasPrev": undefined,
+            "nextPage": undefined,
+            "pageCount": 1,
+            "perPage": undefined,
+            "prevPage": undefined,
+            "total": undefined,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Table
+            data={
+                        Object {
+                                    "columns": Array [
+                                      Object {
+                                        "key": "id",
+                                        "title": "ID",
+                                        "type": 1,
+                                      },
+                                      Object {
+                                        "key": "email",
+                                        "title": "Email",
+                                        "type": 0,
+                                      },
+                                      Object {
+                                        "key": "username",
+                                        "title": "Name",
+                                        "type": 0,
+                                      },
+                                      Object {
+                                        "key": "created_at",
+                                        "title": "Created On",
+                                        "type": 3,
+                                      },
+                                      Object {
+                                        "key": "role",
+                                        "title": "Role",
+                                        "type": 5,
+                                      },
+                                    ],
+                                    "rows": Array [
+                                      Object {
+                                        "created_at": "10-08-2018",
+                                        "email": "mail@test.com",
+                                        "id": 1,
+                                        "role": 1,
+                                        "username": "edward",
+                                      },
+                                    ],
+                                  }
+            }
+            onToggle={[Function]}
+/>,
+          <Paginator
+            data={
+                        Object {
+                                    "users": Array [
+                                      Object {
+                                        "created_at": "10-08-2018",
+                                        "email": "mail@test.com",
+                                        "id": 1,
+                                        "role": 1,
+                                        "username": "edward",
+                                      },
+                                    ],
+                                  }
+            }
+            onDelete={[Function]}
+            onEdit={[Function]}
+            onNext={[Function]}
+            onPrev={[Function]}
+            onToggle={[Function]}
+            pageInfo={
+                        Object {
+                                    "currentCount": undefined,
+                                    "currentPage": 1,
+                                    "hasNext": undefined,
+                                    "hasPrev": undefined,
+                                    "nextPage": undefined,
+                                    "pageCount": 1,
+                                    "perPage": undefined,
+                                    "prevPage": undefined,
+                                    "total": undefined,
+                                  }
+            }
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "data": Object {
+              "columns": Array [
+                Object {
+                  "key": "id",
+                  "title": "ID",
+                  "type": 1,
+                },
+                Object {
+                  "key": "email",
+                  "title": "Email",
+                  "type": 0,
+                },
+                Object {
+                  "key": "username",
+                  "title": "Name",
+                  "type": 0,
+                },
+                Object {
+                  "key": "created_at",
+                  "title": "Created On",
+                  "type": 3,
+                },
+                Object {
+                  "key": "role",
+                  "title": "Role",
+                  "type": 5,
+                },
+              ],
+              "rows": Array [
+                Object {
+                  "created_at": "10-08-2018",
+                  "email": "mail@test.com",
+                  "id": 1,
+                  "role": 1,
+                  "username": "edward",
+                },
+              ],
+            },
+            "onToggle": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "data": Object {
+              "users": Array [
+                Object {
+                  "created_at": "10-08-2018",
+                  "email": "mail@test.com",
+                  "id": 1,
+                  "role": 1,
+                  "username": "edward",
+                },
+              ],
+            },
+            "onDelete": [Function],
+            "onEdit": [Function],
+            "onNext": [Function],
+            "onPrev": [Function],
+            "onToggle": [Function],
+            "pageInfo": Object {
+              "currentCount": undefined,
+              "currentPage": 1,
+              "hasNext": undefined,
+              "hasPrev": undefined,
+              "nextPage": undefined,
+              "pageCount": 1,
+              "perPage": undefined,
+              "prevPage": undefined,
+              "total": undefined,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
