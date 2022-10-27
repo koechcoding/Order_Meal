@@ -51,7 +51,7 @@ class Login extends React.Component {
 
     render(){
         const { error, loading } = this.state
-        cnst user = authenticated();
+        const user = authenticated();
         if(user){
             switch(user.role){
                 case Role.SUPER_ADMIN:
