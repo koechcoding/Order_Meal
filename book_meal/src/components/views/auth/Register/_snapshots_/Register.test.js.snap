@@ -1,0 +1,645 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Register /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Register />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <form
+        className="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 card"
+        onSubmit={[Function]}
+>
+        <h5
+                className="text-center mb-3 mt-4"
+        >
+                Create An Account
+        </h5>
+        <label>
+                Username
+        </label>
+        <input
+                className="form-control"
+                name="username"
+                onChange={[Function]}
+                type="text"
+        />
+        <label>
+                Email
+        </label>
+        <input
+                className="form-control"
+                name="email"
+                onChange={[Function]}
+                type="email"
+        />
+        <label>
+                Password 
+        </label>
+        <input
+                className="form-control"
+                name="password"
+                onChange={[Function]}
+                type="password"
+        />
+        <label>
+                Confirm Password
+        </label>
+        <input
+                className="form-control"
+                name="password_confirmation"
+                onChange={[Function]}
+                type="password"
+        />
+        <Button
+                className="btn btn-primary mt-2"
+                color="secondary"
+                disabled={undefined}
+                tag="button"
+        >
+                Sign Up
+        </Button>
+        <p
+                className="text-center pt-3"
+        >
+                <Link
+                        replace={false}
+                        to="/login"
+                >
+                        Login?
+                </Link>
+        </p>
+</form>,
+      "loading": undefined,
+      "styles": Object {
+        "height": "100vh",
+        "minHeight": "780px",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h5
+            className="text-center mb-3 mt-4"
+>
+            Create An Account
+</h5>,
+          undefined,
+          <label>
+            Username
+</label>,
+          <input
+            className="form-control"
+            name="username"
+            onChange={[Function]}
+            type="text"
+/>,
+          <label>
+            Email
+</label>,
+          <input
+            className="form-control"
+            name="email"
+            onChange={[Function]}
+            type="email"
+/>,
+          <label>
+            Password 
+</label>,
+          <input
+            className="form-control"
+            name="password"
+            onChange={[Function]}
+            type="password"
+/>,
+          <label>
+            Confirm Password
+</label>,
+          <input
+            className="form-control"
+            name="password_confirmation"
+            onChange={[Function]}
+            type="password"
+/>,
+          <Button
+            className="btn btn-primary mt-2"
+            color="secondary"
+            disabled={undefined}
+            tag="button"
+>
+            Sign Up
+</Button>,
+          <p
+            className="text-center pt-3"
+>
+            <Link
+                        replace={false}
+                        to="/login"
+            >
+                        Login?
+            </Link>
+</p>,
+        ],
+        "className": "col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 card",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Create An Account",
+            "className": "text-center mb-3 mt-4",
+          },
+          "ref": null,
+          "rendered": "Create An Account",
+          "type": "h5",
+        },
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Username",
+          },
+          "ref": null,
+          "rendered": "Username",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "form-control",
+            "name": "username",
+            "onChange": [Function],
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Email",
+          },
+          "ref": null,
+          "rendered": "Email",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "form-control",
+            "name": "email",
+            "onChange": [Function],
+            "type": "email",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Password ",
+          },
+          "ref": null,
+          "rendered": "Password ",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "form-control",
+            "name": "password",
+            "onChange": [Function],
+            "type": "password",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Confirm Password",
+          },
+          "ref": null,
+          "rendered": "Confirm Password",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "form-control",
+            "name": "password_confirmation",
+            "onChange": [Function],
+            "type": "password",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Sign Up",
+            "className": "btn btn-primary mt-2",
+            "color": "secondary",
+            "disabled": undefined,
+            "tag": "button",
+          },
+          "ref": null,
+          "rendered": "Sign Up",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/login"
+>
+              Login?
+</Link>,
+            "className": "text-center pt-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Login?",
+              "replace": false,
+              "to": "/login",
+            },
+            "ref": null,
+            "rendered": "Login?",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+      ],
+      "type": "form",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <form
+          className="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 card"
+          onSubmit={[Function]}
+>
+          <h5
+                    className="text-center mb-3 mt-4"
+          >
+                    Create An Account
+          </h5>
+          <label>
+                    Username
+          </label>
+          <input
+                    className="form-control"
+                    name="username"
+                    onChange={[Function]}
+                    type="text"
+          />
+          <label>
+                    Email
+          </label>
+          <input
+                    className="form-control"
+                    name="email"
+                    onChange={[Function]}
+                    type="email"
+          />
+          <label>
+                    Password 
+          </label>
+          <input
+                    className="form-control"
+                    name="password"
+                    onChange={[Function]}
+                    type="password"
+          />
+          <label>
+                    Confirm Password
+          </label>
+          <input
+                    className="form-control"
+                    name="password_confirmation"
+                    onChange={[Function]}
+                    type="password"
+          />
+          <Button
+                    className="btn btn-primary mt-2"
+                    color="secondary"
+                    disabled={undefined}
+                    tag="button"
+          >
+                    Sign Up
+          </Button>
+          <p
+                    className="text-center pt-3"
+          >
+                    <Link
+                              replace={false}
+                              to="/login"
+                    >
+                              Login?
+                    </Link>
+          </p>
+</form>,
+        "loading": undefined,
+        "styles": Object {
+          "height": "100vh",
+          "minHeight": "780px",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h5
+              className="text-center mb-3 mt-4"
+>
+              Create An Account
+</h5>,
+            undefined,
+            <label>
+              Username
+</label>,
+            <input
+              className="form-control"
+              name="username"
+              onChange={[Function]}
+              type="text"
+/>,
+            <label>
+              Email
+</label>,
+            <input
+              className="form-control"
+              name="email"
+              onChange={[Function]}
+              type="email"
+/>,
+            <label>
+              Password 
+</label>,
+            <input
+              className="form-control"
+              name="password"
+              onChange={[Function]}
+              type="password"
+/>,
+            <label>
+              Confirm Password
+</label>,
+            <input
+              className="form-control"
+              name="password_confirmation"
+              onChange={[Function]}
+              type="password"
+/>,
+            <Button
+              className="btn btn-primary mt-2"
+              color="secondary"
+              disabled={undefined}
+              tag="button"
+>
+              Sign Up
+</Button>,
+            <p
+              className="text-center pt-3"
+>
+              <Link
+                            replace={false}
+                            to="/login"
+              >
+                            Login?
+              </Link>
+</p>,
+          ],
+          "className": "col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 card",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Create An Account",
+              "className": "text-center mb-3 mt-4",
+            },
+            "ref": null,
+            "rendered": "Create An Account",
+            "type": "h5",
+          },
+          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Username",
+            },
+            "ref": null,
+            "rendered": "Username",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control",
+              "name": "username",
+              "onChange": [Function],
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Email",
+            },
+            "ref": null,
+            "rendered": "Email",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control",
+              "name": "email",
+              "onChange": [Function],
+              "type": "email",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Password ",
+            },
+            "ref": null,
+            "rendered": "Password ",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control",
+              "name": "password",
+              "onChange": [Function],
+              "type": "password",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Confirm Password",
+            },
+            "ref": null,
+            "rendered": "Confirm Password",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control",
+              "name": "password_confirmation",
+              "onChange": [Function],
+              "type": "password",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Sign Up",
+              "className": "btn btn-primary mt-2",
+              "color": "secondary",
+              "disabled": undefined,
+              "tag": "button",
+            },
+            "ref": null,
+            "rendered": "Sign Up",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/login"
+>
+                Login?
+</Link>,
+              "className": "text-center pt-3",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Login?",
+                "replace": false,
+                "to": "/login",
+              },
+              "ref": null,
+              "rendered": "Login?",
+              "type": [Function],
+            },
+            "type": "p",
+          },
+        ],
+        "type": "form",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
