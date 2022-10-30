@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Menu
+    item={Object {}}
+    menu={Object {}}
+    setLoading={[Function]}
+    toggle={[Function]}
+    toggleMenu={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        Array [],
+        <OrderModal
+          isOpen={undefined}
+          item={undefined}
+          menu={undefined}
+          setLoading={[Function]}
+          size="sm"
+          toggle={[Function]}
+          toggleMenu={[Function]}
+/>,
+      ],
+      "contentFilter": <div
+        className="row mb-3"
+>
+        <div
+                className="col-3 col-sm-2 col-lg-1 text-right"
+        >
+                <label
+                        className="pt-2"
+                >
+                        Menu:
+                </label>
+        </div>
+        <div
+                className="col-9 col-sm-7 col-lg-4 col-xl-3 pl-0 pr-1"
+        >
+                <select
+                        className="form-control"
+                        onChange={[Function]}
+                >
+                        <option
+                                value="0"
+                        >
+                                -- All --
+                        </option>
+                </select>
+        </div>
+</div>,
+      "contentTop": <div
+        className="col-12 mb-2 pr-0 pr-sm-2"
+>
+        <h5
+                className="d-inline-block"
+        >
+                Today's Menu
+        </h5>
+</div>,
+      "item": Object {},
+      "menu": Object {},
+      "setLoading": [Function],
+      "toggle": [Function],
+      "toggleMenu": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "isOpen": undefined,
+          "item": undefined,
+          "menu": undefined,
+          "setLoading": [Function],
+          "size": "sm",
+          "toggle": [Function],
+          "toggleMenu": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          Array [],
+          <OrderModal
+            isOpen={undefined}
+            item={undefined}
+            menu={undefined}
+            setLoading={[Function]}
+            size="sm"
+            toggle={[Function]}
+            toggleMenu={[Function]}
+/>,
+        ],
+        "contentFilter": <div
+          className="row mb-3"
+>
+          <div
+                    className="col-3 col-sm-2 col-lg-1 text-right"
+          >
+                    <label
+                              className="pt-2"
+                    >
+                              Menu:
+                    </label>
+          </div>
+          <div
+                    className="col-9 col-sm-7 col-lg-4 col-xl-3 pl-0 pr-1"
+          >
+                    <select
+                              className="form-control"
+                              onChange={[Function]}
+                    >
+                              <option
+                                        value="0"
+                              >
+                                        -- All --
+                              </option>
+                    </select>
+          </div>
+</div>,
+        "contentTop": <div
+          className="col-12 mb-2 pr-0 pr-sm-2"
+>
+          <h5
+                    className="d-inline-block"
+          >
+                    Today's Menu
+          </h5>
+</div>,
+        "item": Object {},
+        "menu": Object {},
+        "setLoading": [Function],
+        "toggle": [Function],
+        "toggleMenu": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpen": undefined,
+            "item": undefined,
+            "menu": undefined,
+            "setLoading": [Function],
+            "size": "sm",
+            "toggle": [Function],
+            "toggleMenu": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
