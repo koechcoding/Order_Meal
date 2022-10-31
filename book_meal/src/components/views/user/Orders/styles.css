@@ -1,0 +1,12 @@
+.show > .btn-secondary.dropdown-toggle {
+    background-color: #008080 !important; }
+  
+  .dropdown-menu {
+    margin-right: 80px !important; }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus,
+  .dropdown-item:active {
+    cursor: pointer;
+    color: black !important;
+    background-color: transparent !important; }
