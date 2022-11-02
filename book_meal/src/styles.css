@@ -1,0 +1,247 @@
+@import url(~bootstrap/dist/css/bootstrap.min.css);
+@import url(~animate.css/animate.min.css);
+/**
+ * Fonts.
+ *
+ * Here we will use Google fonts...
+ */
+@import url("https://fonts.googleapis.com/css?family=Leckerli+One");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  font-family: 'Nunito', sans-serif; }
+
+/**
+ * Colors.
+ * This uses a colorscheme obtained from coolors.co
+ * Reference: https://coolors.co/2d728f-3b8ea5-f5ee9e-f49e4c-ab3428
+ */
+/* backgrounds */
+.bg-teal {
+  background-color: #2d728f !important; }
+
+.bg-blue {
+  background-color: #3b83a5 !important; }
+
+.bg-flav {
+  background-color: #f5ee9e !important; }
+
+.bg-carrot {
+  background-color: #f49e5c !important; }
+
+.bg-brown {
+  background-color: #ab3428 !important; }
+
+/* text color */
+* {
+  color: #555; }
+
+/* better for contrast */
+.text-white {
+  color: #fff !important; }
+
+.text-teal {
+  color: #2d728f !important; }
+
+.text-blue {
+  color: #3b83a5 !important; }
+
+.text-flav {
+  color: #f5ee9e !important; }
+
+.text-carrot {
+  color: #f49e5c !important; }
+
+.text-brown {
+  color: #ab3428 !important; }
+
+.text-orange {
+  color: orange !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.btn,
+.modal-content,
+.form-control {
+  border-radius: 0; }
+
+.table-holder {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 0;
+  margin: 0; }
+
+.btn {
+  color: black;
+  background-color: #f5ee9e; }
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary {
+  color: white;
+  background-color: #008080; }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  color: black;
+  background-color: orange;
+  border: 1px solid orange; }
+
+.btn-danger,
+.btn-danger:hover {
+  color: white;
+  background-color: #cc0000 !important; }
+
+.btn-lg {
+  font-size: 19px; }
+
+.modal-header {
+  border-bottom: 0; }
+
+.form-control:focus,
+.form-control:active {
+  box-shadow: none; }
+
+a {
+  color: #008080; }
+
+a:hover {
+  color: #004040; }
+
+a:active, a:focus {
+  outline: none; }
+
+label {
+  margin-bottom: 0; }
+
+select.form-control,
+input.form-control {
+  margin-bottom: 20px;
+  background-color: #f4f1d6; }
+
+select.form-control:focus,
+input.form-control:focus {
+  margin-bottom: 20px;
+  background-color: #f4f1d6; }
+
+.logo,
+.logo-medium,
+.logo-small {
+  font-family: 'Leckerli One', cursive; }
+
+.logo {
+  font-size: 43px; }
+
+.logo-medium {
+  font-size: 30px; }
+
+.logo-small {
+  font-size: 28px; }
+
+.menu-modal .modal-content,
+.patterns {
+  background-image: url("./assets/food.png"); }
+
+/* table design */
+.table-holder table, .table-holder th, .table-holder td {
+  border: 2px dashed #2d728f; }
+
+.table thead th {
+  border-bottom: 2px dashed #2d728f; }
+
+.user,
+.super-admin,
+.admin,
+.accepted,
+.rejected,
+.pending,
+.edit-act,
+.delete-act,
+.revoke-act,
+.revoked-state,
+.accept-act {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-style: italic;
+  cursor: pointer; }
+
+.super-admin,
+.rejected,
+.delete-act,
+.revoke-act, .revoked-state {
+  color: #cc0000; }
+
+.admin,
+.accepted,
+.accept-act,
+.edit-act {
+  color: #2d728f; }
+
+th, td {
+  text-align: center;
+  padding: 4px; }
+
+body {
+  background-color: #eee; }
+
+body #root {
+  height: 100%; }
+
+.active {
+  background-color: orange; }
+
+.notice {
+  text-align: center;
+  border: 2px dashed #008080; }
+
+.notice-close {
+  color: #666;
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 5px; }
+
+.notice h5 {
+  padding-top: 5px; }
+
+.menu-modal .modal-content {
+  background-color: #2d728f; }
+  .menu-modal .modal-content .modal-header span {
+    color: white !important; }
+  .menu-modal .modal-content .btn {
+    display: block;
+    margin-top: 5.5vh;
+    margin-right: 40px;
+    margin-left: 40px;
+    transition: 0.1s all; }
+  .menu-modal .modal-content .btn:first-of-type {
+    margin-top: 2vh; }
+  .menu-modal .modal-content .btn:hover {
+    color: black;
+    background-color: orange; }
+  .menu-modal .modal-content .btn-logout,
+  .menu-modal .modal-content .btn-logout:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .menu-modal .modal-content .btn-logout:hover {
+    color: white; }
+  .menu-modal .modal-content .btn-logout {
+    margin: auto;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-bottom: 100px;
+    margin-top: 30px !important;
+    width: 70%; }
+  .menu-modal .modal-content .btn.active {
+    background-color: orange; }
+  .menu-modal .modal-content hr {
+    width: 60%;
+    display: block;
+    border-top: 2px solid #ddd; }
+  .menu-modal .modal-content .logo {
+    text-align: center;
+    display: inline-block; }
